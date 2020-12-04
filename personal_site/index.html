@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Records 2020</title>
+    <link rel="stylesheet" href="css/standard.css" />
+    <!-- <script type="text/javascript" src="js/fadein.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Script to fade in/out each article -->
+    <script>
+        $(document).ready(function () {
+
+            $(document).on("scroll", function () {
+                var pageTop = $(document).scrollTop()
+                var pageBottom = pageTop + $(window).height()
+                var tags = $(".row")
+
+                for (var i = 0; i < tags.length; i++) {
+                    var tag = tags[i]
+
+                    if ($(tag).position().top < pageBottom) {
+                        $(tag).addClass("visible")
+                    } else {
+                        $(tag).removeClass("visible")
+                    }
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>spencer jones</h1>
+        <!-- <p class="subheading">spencer jones has a website</p> -->
+    </header>
+    <section class="main">
+        <article class="row">
+            <div class="welcome">
+                <h2>Hello</h2>
+                <p>This is a collection of my favorite records of 2020. It's not a "best of" list. It's in no particular order.</p>
+            </div>
+        </article>
+        <article class="row">
+            <div class="column pic">
+                <img class="cover" src="images/covers/haim.png">
+            </div>
+            <div class="column">
+                <h2>Haim: Women In Music Part III</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <iframe src="https://open.spotify.com/embed/track/5y79D5wSVrcB5eFq0gaWfL" width=100% height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/alfredo.png">
+            </div>
+            <div class="column">
+                <h2>Freddie Gibbs & The Alchemist: Alfredo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <iframe src="https://open.spotify.com/embed/track/15NQ3x1f2GUhqs8oBXhTqp" width=100% height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/annamcclellan.png">
+            </div>
+            <div class="column">
+                <h2>Anna McClellan: I saw first light</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <iframe src="https://open.spotify.com/embed/track/5zgCVntMaieORH1IXaIFbf" width=100% height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/caribou.png">
+            </div>
+            <div class="column">
+                <h2>Caribou: Suddenly</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <iframe src="https://open.spotify.com/embed/track/28zoejp0PJ4dpp9xOPQPiO" width=100% height="80"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/childishgambino.png">
+            </div>
+            <div class="column">
+                <h2>Childish Gambino: 3.15.20</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <iframe src="https://open.spotify.com/embed/track/5X4R93Qcw54yp9Utwy7Mlr" width=100% height=80
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/destroyer.png">
+            </div>
+            <div class="column">
+                <h2>Destroyer: Have We Met</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/jessieware.png">
+            </div>
+            <div class="column">
+                <h2>Jessie Ware: What's Your Pleasure?</h2>
+                <h3>Release Date</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/kellyleeowens.png">
+            </div>
+            <div class="column">
+                <h2>Kelly Lee Owens: Inner Song</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/mountaingoats.png">
+            </div>
+            <div class="column">
+                <h2>Mountain Goats: Getting Into Knives</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/phoebebridgers.png">
+            </div>
+            <div class="column">
+                <h2>Phoebe Bridgers: Punisher</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/runthejewels.png">
+            </div>
+            <div class="column">
+                <h2>Run The Jewels: RTJ4</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/the1975.png">
+            </div>
+            <div class="column">
+                <h2>The 1975: Notes On A Conditional Form</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/thundercat.png">
+            </div>
+            <div class="column">
+                <h2>Thundercat: It Is What It Is</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/victoriamonet.png">
+            </div>
+            <div class="column">
+                <h2>Victoria Monét: JAGUAR</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+
+        <article class="row">
+            <div class="column">
+                <img class="cover" src="images/covers/waxahatchee.png">
+            </div>
+            <div class="column">
+                <h2>Waxahatchee: Saint Cloud</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>
+
+</html>

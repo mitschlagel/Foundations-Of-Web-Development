@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+section {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 15px;
+    transition: transform 0.25s;
+    will-change: transform;
+}
+section div {
+    width: 100%;
+    height: 400px;
+    background: #fff;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+}
+section div:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+code {
+    background: #2db34a;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    font: 14px/24px "Courier New", Courier;
+    padding: 24px 15px;
+    text-align: center;
+}
+
+header,
+section,
+footer {
+    margin: 0 1.5% 24px 1.5%;
+}
+
+section {
+    display: inline-block;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+footer {
+    margin-bottom: 0;
+}

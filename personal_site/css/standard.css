@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans&display=swap');
+
+body {
+    background-color: #222831;
+    color: #222831;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #f05454;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Bungee', 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #e8e8e8;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-family: 'Bungee', 'Times New Roman', Times, serif;
+    color: #222831;
+    font-size: 1.3rem;
+}
+
+a {
+    color: #f05454;
+}
+
+.subheading {
+    color: #e8e8e8;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20vh;
+}
+
+.welcome {
+    padding: 60px;
+}
+
+.row {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s;
+    background-color: #e8e8e8;
+    font-family: 'Open Sans', sans-serif;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 6px;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+.row.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+.column {
+    flex: -1;
+    padding: 1em;
+    text-align: left;
+    margin: 20px;
+    vertical-align: middle;
+}
+
+.cover {
+    height: 44vh;
+}
