@@ -390,6 +390,17 @@ p a {
   text-transform: uppercase;
 }
 
+.btn-default {
+  border: 0;
+  background: #6c89db;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+
+.btn-default:hover {
+  background: #778da148;
+}
+
 .btn-alt {
   border: 1px solid #dfe2e5;
   padding: 10px 30px;
@@ -484,6 +495,59 @@ p a {
 
 /*
   ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+
+form {
+  margin-bottom: 22px;
+}
+
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.register-group label {
+  color: #6c89db;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #cc66cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+
+.register-group textarea {
+  height: 78px;
+}
+
+
+/*
+  ========================================
   Home
   ========================================
 */
@@ -498,11 +562,7 @@ p a {
   Venue
   ========================================
 */
-/*
-  ========================================
-  Register
-  ========================================
-*/
+
 
 
 
