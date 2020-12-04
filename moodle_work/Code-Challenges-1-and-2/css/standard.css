@@ -1,0 +1,10 @@
+a {
+    color: cyan;
+}
+
+nav {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;   
+}
+

@@ -1,0 +1,51 @@
+/*Google Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+a:link, a:visited {
+  color: #ff4b5c;
+}
+
+a:hover, a:active {
+  color: #66bfbf;
+}
+
+body {
+  align-self: center;
+  max-width: 700px;
+  min-width: 700px;
+  margin: auto;
+  background-color: #e0ece4;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-size: small;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+  color: #056674; 
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+/* profile photo */
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  padding: 25px;
+}
+
+img.icons {
+  height: 30px;
+  width: auto;
+  padding-top: 10px;
+  padding-right: 20px
+}

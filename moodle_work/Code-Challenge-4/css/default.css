@@ -1,0 +1,41 @@
+html {
+    font-family: 'Open Sans', cursive;
+    font-size: 3vh;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/Cats-and-Dogs.jpg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #808080;
+    text-align: center;
+    padding: 0.25em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    color: white;
+    padding-right: 2ch;
+}
+
+.title {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    text-align: center; 
+}
