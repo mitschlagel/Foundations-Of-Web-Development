@@ -65,7 +65,7 @@ a {
     flex-direction: row;
     align-items: center;
     border-radius: 6px;
-    box-shadow: 5px 10px rgba(240, 84, 84, 0.5);
+    box-shadow: 5px 10px rgb(240, 84, 84);
     margin-top: 25vh;
     margin-bottom: 25vh;
 }
