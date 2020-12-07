@@ -1,5 +1,5 @@
 # Foundations-Of-Web-Development
 
-## Personal Page Home work is in Personal-Page-Homework
+## Personal Page Homework is in Personal-Page-Homework
 
 ## Moodle assignments are in moodle-work
