@@ -236,9 +236,9 @@ body {
 
 .row-alt {
   background: #cbe2c1;
-  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: -webkit-linear-gradient(to right,  #8ea4cf, #b3d7e5);
+  background: -moz-linear-gradient(to right,  #8ea4cf, #b3d7e5);
+  background: linear-gradient(to right,  #8ea4cf, #b3d7e5);
   padding: 44px 0 22px 0;
 }
 
@@ -411,7 +411,11 @@ p a {
   color: #647188;
 }
 
-
+/*
+  ========================================
+  Home
+  ========================================
+*/
 
 .hero {
   color: #fff;
@@ -427,6 +431,17 @@ p a {
 .hero p {
   font-size: 24px;
   font-weight: 100;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%;
 }
 
 /*
@@ -475,6 +490,8 @@ p a {
   color: #a9b2b9;
 }
 
+
+
 /*
   ========================================
   Speakers
@@ -485,12 +502,19 @@ p a {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
 }
 
 .speaker {
   margin-bottom: 44px;
+}
+
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  vertical-align: top;
+  margin: -66px 0 22px 0;
 }
 
 /*
@@ -558,6 +582,69 @@ table {
 
 table:last-child {
   margin-bottom: 0;
+}
+
+th,
+td {
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+
+td {
+  width: 40%;
+}
+
+thead {
+  line-height: 44px;
+}
+
+thead th {
+  color: #648880;
+  font-size: 24px;
+}
+
+tbody th {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+
+tbody td {
+  border-top: 1px solid #dfe2e5;
+  padding-top: 21px;
+}
+
+tbody td:first-of-type {
+  padding-right: 15px;
+}
+
+tbody td:last-of-type {
+  padding-left: 15px;
+}
+
+tbody td:only-of-type {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+table a {
+  color: #888;
+}
+
+table h4 {
+  margin-bottom: 0;;
+}
+
+.schedule-offset {
+  color: #a9b2b9;
 }
 
 /*

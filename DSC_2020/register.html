@@ -1,112 +1,156 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Style Conference - Register</title>
+    <link rel="stylesheet" href="assets/css/standard.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Style Conference - Register</title>
-        <link rel="stylesheet" href="assets/css/standard.css">
-    </head>
-
-<body>
+  <body>
     <header class="primary-header container group">
-        <h1 class="logo">
-            <a href="index.html"><img src="assets/images/dsc-logo.png" alt="logo"></a>
-        </h1>
+      <h1 class="logo">
+        <a href="index.html"
+          ><img src="assets/images/dsc-logo.png" alt="logo"
+        /></a>
+      </h1>
 
-        <h3 class="tagline">August 24 - 26th Omaha, NE</h3>
-        <nav class="nav primary-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li><!--
-                --><li><a href="speakers.html">Speakers</a></li><!--
-                --><li><a href="schedule.html">Schedule</a></li><!--
-                --><li><a href="venue.html">Venue</a></li><!--
-                --><li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+      <h3 class="tagline">August 24 - 26th Omaha, NE</h3>
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!--
+                -->
+          <li><a href="speakers.html">Speakers</a></li>
+          <!--
+                -->
+          <li><a href="schedule.html">Schedule</a></li>
+          <!--
+                -->
+          <li><a href="venue.html">Venue</a></li>
+          <!--
+                -->
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="row-alt">
-        <div class="lead container">
-            <h1>Register</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel magna sit amet metus mollis accumsan ut ac lacus. Vestibulum bibendum ligula mattis libero efficitur finibus. Quisque molestie feugiat elit vel eleifend. Nunc tincidunt feugiat leo, vitae molestie enim vulputate a. Maecenas congue convallis arcu non efficitur. Phasellus sed quam ac nisi posuere pellentesque at id orci. Curabitur condimentum purus enim, a blandit ex efficitur ut. Nunc non enim mi. Praesent faucibus dolor et augue ultricies, et rutrum velit congue. Suspendisse dui nisl, pretium vehicula ullamcorper in, sollicitudin vel ligula. Maecenas feugiat elit orci, ac rutrum ligula accumsan at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sit amet faucibus quam. In lacinia felis augue, ac hendrerit metus commodo id. Aenean non neque ac metus fringilla consectetur. Aliquam at mauris vel dolor convallis placerat vel eget felis.</p>
-        </div>
+      <div class="lead container">
+        <h1>Register</h1>
+        <p>
+          Each year we strive to reach and teach developers nation wide, and
+          this year we'd love it for you to join us. Conference passes only cost
+          $99, one of the best values you'll find.
+        </p>
+      </div>
     </section>
-    
+
     <!-- Main Content -->
 
     <section class="row">
-        <div class="grid">
+      <div class="grid">
+        <!-- Details -->
 
-            <!-- Details -->
+        <section class="col-2-3">
+          <h2>Purchase a Conference Pass</h2>
+          <h5>$99 per Pass</h5>
 
-            <section class="col-2-3">
+          <p>
+            Purchase your Styles Conference pass using the form to the right.
+            Multiple passes may be purchased within the same order, so feel free
+            to bring a friend or two along. Once your order is finished we'll
+            follow up and provide a receipt for your purchase. See you soon!
+          </p>
 
-                <h2>Purcahse a Conference Pass</h2>
-                <h5>$99 per Pass</h5>
-                
-                <p>Purcahse your Style Conference Pass</p>
+          <h4>Benefits of Attending</h4>
 
-                <h4>Benefits of Attending</h4>
-
-                <ul class="why-attend">
-                    <li>Over twenty speakers</li>
-                    <li>Three days of workshops</li>
-                    <li>Hosted at the Embassy Suites</li>
-                    <li>Gain experience and vital information</li>
-                </ul>
-
-            </section><!-- 
+          <ul class="why-attend">
+            <li>
+              Over twenty world-class speakers sharing their knowledge and
+              journey.
+            </li>
+            <li>
+              Three day of hands on workshops and professional presentations
+            </li>
+            <li>
+              Hosted at The Embassy Suites, a beautiful Conference Center where
+              many can gether
+            </li>
+            <li>
+              Gain experience and vital information on the latest software,
+              techniques, and best practices.
+            </li>
+          </ul>
+        </section>
+        <!-- 
 
                 Registration Form
 
-        --><form action="#" class="col-1-3" method="POST">
-            <fieldset class="register-group">
-                <label>
-                    Name
-                    <input type="text" name="name" placeholder="full name" required>
-                </label>
+        -->
+        <form action="#" class="col-1-3" method="POST">
+          <fieldset class="register-group">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="full name" required />
+            </label>
 
-                <label>
-                    Email
-                    <input type="email" name="email" placeholder="email address" required>
-                </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="email address"
+                required
+              />
+            </label>
 
-                <label>
-                    Number of Passes
-                    <select name="quantity" required>
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </label>
+            <label>
+              Number of Passes
+              <select name="quantity" required>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
 
-                <label>
-                    Comments
-                    <textarea name="comments"></textarea>
-                </label>
-            </fieldset>
+            <label>
+              Comments
+              <textarea name="comments"></textarea>
+            </label>
+          </fieldset>
 
-            <input class="btn btn-default" type="submit" name="submit" value="Purchase">
+          <input
+            class="btn btn-default"
+            type="submit"
+            name="submit"
+            value="Purchase"
+          />
         </form>
-        
-        </div>
+      </div>
     </section>
     <footer class="primary-footer container group">
-        <small>&copy; Developer Style Conference</small>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li><!--
-                --><li><a href="speakers.html">Speakers</a></li><!--
-                --><li><a href="schedule.html">Schedule</a></li><!--
-                --><li><a href="venue.html">Venue</a></li><!--
-                --><li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
+      <small>&copy; Developer Style Conference</small>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!--
+                -->
+          <li><a href="speakers.html">Speakers</a></li>
+          <!--
+                -->
+          <li><a href="schedule.html">Schedule</a></li>
+          <!--
+                -->
+          <li><a href="venue.html">Venue</a></li>
+          <!--
+                -->
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
     </footer>
-</body>
-
+  </body>
 </html>
