@@ -6,6 +6,8 @@
     <title>JavaScript Intro</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+
+        // js basics example
         let total = 0;
         console.log("At start, total = " + total);
         total += 2;
@@ -16,13 +18,14 @@
         let lastName = "Jones";
         console.log(firstName + " " + lastName);
 
+        // Function wihtout parameters
         function addThreeAndFive() {
             let sum = 3 + 5;
             return "Three plus five equals " + sum;
         }
         console.log(addThreeAndFive());
 
-
+        // Function with parameters
         function addTwoNumbers(x, y) {
             let sum = x + y;
             return `${x} + ${y} = ${sum};`
@@ -32,6 +35,27 @@
 
         // jQuery example
         $("div").append("<p>This is a paragraph</p>");
+
+        // for loop example
+        function countToNumber(number) {
+            let total = 0;
+            for (let i = 0; i < number; i++) {
+                console.log("i is " + i);
+                total += i
+            }
+            console.log("i is stopped at " + total);
+        }
+        countToNumber(5);
+
+        function factorial(value) {
+            let total = 1;
+            for (i = 2; i <= value; i++) {
+                total *= i;
+            }
+            return total;
+        }
+        console.log(factorial(5));
+
     </script>
     <style>
         div {
