@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Intro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let total = 0;
+        console.log("At start, total = " + total);
+        total += 2;
+        total += 3;
+        total++;
+        console.log("At end, total = " + total);
+        let firstName = "Spencer";
+        let lastName = "Jones";
+        console.log(firstName + " " + lastName);
+
+        function addThreeAndFive() {
+            let sum = 3 + 5;
+            return "Three plus five equals " + sum;
+        }
+        console.log(addThreeAndFive());
+
+
+        function addTwoNumbers(x, y) {
+            let sum = x + y;
+            return `${x} + ${y} = ${sum};`
+        }
+        console.log(addTwoNumbers(5, 3));
+        console.log(addTwoNumbers(22, 12));
+
+        // jQuery example
+        $("div").append("<p>This is a paragraph</p>");
+    </script>
+    <style>
+        div {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is the div
+    </div>
+    
+</body>
+</html>
