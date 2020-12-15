@@ -7,26 +7,8 @@
     <link rel="stylesheet" href="css/standard.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Script to fade in/out each article -->
+    <script src="js/fadein.js"></script>
     <!-- Followed tutorial here: https://www.superhi.com/library/posts/how-to-add-web-design-elements-that-fade-in-and-out-on-scroll -->
-    <script>
-      $(document).ready(function () {
-        $(document).on("scroll", function () {
-          let pageTop = $(document).scrollTop();
-          let pageBottom = pageTop + $(window).height();
-          let tags = $(".row");
-
-          for (let i = 0; i < tags.length; i++) {
-            let tag = tags[i];
-
-            if ($(tag).position().top < pageBottom) {
-              $(tag).addClass("visible");
-            } else {
-              $(tag).removeClass("visible");
-            }
-          }
-        });
-      });
-    </script>
   </head>
 
   <body>
