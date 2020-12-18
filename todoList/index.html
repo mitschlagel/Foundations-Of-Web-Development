@@ -12,39 +12,52 @@
             <h1>to do list</h1>
         </header>
         <section class="input">
-            <div>
-            <label for="task">Enter task:</label>
-            <input type="text" id="task" name="task">
-            </div>    
+            <form action="get">
+                <div>
+                <label for="task">Enter task:</label>
+                <input type="text" id="task" name="task">
+                <button type="submit">fuhgeddaboudit</button>
+                </div>    
 
-            <div>
-            <label for="list">Select list:</label>
-            <select name="list" id="list">
-                <option value="Home">Home</option>
-                <option value="Work">Work</option>
-            </select>
-            </div>
+                <div>
+                <label for="list">Select list:</label>
+                <select name="list" id="list">
+                    <option value="Home">Home</option>
+                    <option value="Work">Work</option>
+                </select>
+                </div>
 
-            <div>
-                <label>Priority:</label>
-                <input type="radio" id="asap" name="priority" value="asap">
-                <label for="high">ASAP</label>
+                <div>
+                    <label>Priority:</label>
+                    <input type="radio" id="asap" name="priority" value="asap">
+                    <label for="high">ASAP</label>
 
-                <input type="radio" id="tomorrow" name="priority" value="tomorrow">
-                <label for="high">Tomorrow</label>
+                    <input type="radio" id="tomorrow" name="priority" value="tomorrow">
+                    <label for="high">Tomorrow</label>
 
-                <input type="radio" id="someday" name="priority" value="someday">
-                <label for="high">Someday</label>
-            </div>
+                    <input type="radio" id="someday" name="priority" value="someday">
+                    <label for="high">Someday</label>
+                </div>
+            </form>    
         </section>
         <section class="lists">
-            <div class="home">
+            <article>
                 <h1>HOME</h1>
+                <div class="home">
+                    <p>
+                        Nothing to do.
+                    </p>
 
-            </div>
-            <div class="work">
+                </div>
+            </article>
+            <article>
                 <h1>WORK</h1>
-            </div>
+                <div class="work">
+                    <p>
+                        Nothing to do.
+                    </p>
+                </div>
+            </article>
         </section>
         <footer>
             Spencer Jones 2020

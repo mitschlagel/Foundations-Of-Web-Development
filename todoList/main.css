@@ -12,40 +12,52 @@ header {
     font-size: 2rem;
 }
 
-.input {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.input { 
     padding: 10px;
-    width: 60%;
+    width: 65%;
     border: 1px solid black;
     border-radius: 6px;
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
 }
 
+.input form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 .lists {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
     padding: 10px;
     border: 1px solid black;
     border-radius: 6px;
     margin-top: 20px;
 }
 
+.lists article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .lists div {
     width: 300px;
     border: 1px solid black;
     border-radius: 6px;
     margin: 30px;
     text-align: center;
-    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+    
 }
 
-.lists div h1 {
+.lists h1 {
     font-size: 1.5rem;
+    
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -55,7 +67,7 @@ footer {
     border: 1px solid black;
     border-radius: 6px;
     margin-top: 20px;
-    width: 60%;
+    width: 65%;
     text-align: center;
     font-size: smaller;
 }
