@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <header class="title">
+            <h1>to do list</h1>
+        </header>
+        <section class="input">
+            <div>
+            <label for="task">Enter task:</label>
+            <input type="text" id="task" name="task">
+            </div>    
+
+            <div>
+            <label for="list">Select list:</label>
+            <select name="list" id="list">
+                <option value="Home">Home</option>
+                <option value="Work">Work</option>
+            </select>
+            </div>
+
+            <div>
+                <label>Priority:</label>
+                <input type="radio" id="asap" name="priority" value="asap">
+                <label for="high">ASAP</label>
+
+                <input type="radio" id="tomorrow" name="priority" value="tomorrow">
+                <label for="high">Tomorrow</label>
+
+                <input type="radio" id="someday" name="priority" value="someday">
+                <label for="high">Someday</label>
+            </div>
+        </section>
+        <section class="lists">
+            <div class="home">
+                <h1>HOME</h1>
+
+            </div>
+            <div class="work">
+                <h1>WORK</h1>
+            </div>
+        </section>
+        <footer>
+            Spencer Jones 2020
+        </footer>
+    </main>
+    
+</body>
+</html>
