@@ -20,6 +20,10 @@ header {
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
 }
 
+#myBtn {
+    font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+}
+
 .input form {
     display: flex;
     flex-direction: row;
