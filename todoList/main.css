@@ -70,16 +70,23 @@ header h1 {
     padding: 0;
 }
 
-.lists img {
+
+
+.lists span {
+    
+    padding: 0 3ch 0 3ch;
+    text-transform: uppercase;
+    font-size: x-small;
+}
+
+.removeButton {
     margin: 0;
-    display: inline;
     height: 1ch;
 }
 
-.lists span {
-    padding-left: 5ch;
-    text-transform: uppercase;
-    font-size: x-small;
+.removeButton:hover {
+    transform: scale(2, 2);
+    cursor: pointer;
 }
 
 .error {
