@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Titillium+Web&display=swap');
 
+body {
+    background-color: #1b120f;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,7 @@ header {
     flex-direction: column;
     align-items: center;
     font-family: 'Nosifer', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8f1d14;
     font-size: 2rem;
 }
 header h1 {
@@ -18,12 +23,13 @@ header h1 {
 }
 
 .input { 
+    background-color: #e6dedd;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
     width: 65%;
-    border: 1px solid black;
+    border: 1px solid #1b120f;
     border-radius: 6px;
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
 }
@@ -34,13 +40,14 @@ header h1 {
 
 
 .lists {
+    background-color: #e6dedd;
     width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #1b120f;
     border-radius: 6px;
     margin-top: 20px;
 }
@@ -63,20 +70,32 @@ header h1 {
     padding: 0;
 }
 
+.lists img {
+    margin: 0;
+    display: inline;
+    height: 1ch;
+}
+
+.lists span {
+    padding-left: 5ch;
+    text-transform: uppercase;
+    font-size: x-small;
+}
+
 .error {
-    border: 1px solid darkred;
+    font-size: 1.3rem;
     padding: 2px;
-    border-radius: 6px;
     position: absolute;
-    color: darkred;
+    color: #8f1d14;
     font-weight: bold;
     text-align: center;
 }
 
 footer {
+    background-color: #e6dedd;
     padding: 10px;
     font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
-    border: 1px solid black;
+    border: 1px solid #1b120f;
     border-radius: 6px;
     margin-top: 20px;
     width: 65%;
