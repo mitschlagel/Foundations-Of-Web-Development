@@ -15,33 +15,31 @@
             <h1>to do list</h1>
         </header>
         <section class="input">
-            <form action="post">
-                <div>
-                <label for="task">Enter task:</label>
-                <input type="text" id="task" value="hello">
-                <button type="button" id="submit">fuhgettaboudit</button>
-                </div>    
+            <div>
+                <label for="task">Enter task:</label> 
+                <input class ="task" type="text" id="task">
+                <button id="submit">fuhgettaboudit</button>
+            </div>    
 
-                <div>
-                <label for="list">Select list:</label>
-                <select name="list" id="list">
-                    <option value="Home">Home</option>
-                    <option value="Work">Work</option>
-                </select>
-                </div>
+            <div>
+            <label for="list">Select list:</label>
+            <select class="list" name="list" id="list">
+                <option value="Home">Home</option>
+                <option value="Work">Work</option>
+            </select>
+            </div>
 
-                <div>
-                    <label>Priority:</label>
-                    <input type="radio" id="asap" name="priority" value="asap">
-                    <label for="high">ASAP</label>
+            <div>
+                <label>Priority:</label>
+                <input class="priority" type="radio" id="asap" name="priority" value="ASAP">
+                <label for="high">ASAP</label>
 
-                    <input type="radio" id="tomorrow" name="priority" value="tomorrow">
-                    <label for="high">Tomorrow</label>
+                <input class="priority" type="radio" id="tomorrow" name="priority" value="Tomorrow">
+                <label for="high">Tomorrow</label>
 
-                    <input type="radio" id="someday" name="priority" value="someday">
-                    <label for="high">Someday</label>
-                </div>
-            </form>
+                <input class="priority" type="radio" id="someday" name="priority" value="Someday">
+                <label for="high">Someday</label>
+            </div>
         </section>
         <section class="lists">
             <article>
@@ -52,6 +50,9 @@
                     </p>
 
                 </div>
+            </article>
+            <article class="error">
+                <!-- Error message -->
             </article>
             <article>
                 <h1>WORK</h1>
