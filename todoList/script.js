@@ -27,17 +27,16 @@ $(document).ready(function(){
             }
         }
     });
+    // click removeButton to remove taskItem (the parent element)
+    // I don't understand why this doesn't work.
+    // Is it because everything fires when the page loads, so this element
+    // doesn't exist yet?
     console.log("Test this function!");
+    $('.taskItem').ready(function(){
+        $('.removeButton').click(function(){
+            console.log("Test this function!");
+            $(this).parent().remove();
+        });
     
-});
-
-// click removeButton to remove taskItem (the parent element)
-// I don't understand why this doesn't work.
-// Is it because everything fires when the page loads, so this element
-// doesn't exist yet?
-$('.taskItem').ready(function(){
-    $('.removeButton').click(function(){
-        console.log("Test this function!");
-        $(this).parent().remove();
     });
 });
