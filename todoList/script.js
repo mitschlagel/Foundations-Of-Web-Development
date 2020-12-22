@@ -1,19 +1,10 @@
-// Move task from text input to appropriate list
-    // If button clicked == true
-        // capture val in text 
-            // display val in appropriate list
-            // buttonClicked == false
-
-// All options are required:
-    // task name, list, and priority
-    // lack of one will generate an error
-
 $(document).ready(function(){
+
+    // Global variables
     const home = $('.home');
     const work = $('.work');
     const removeButton = "<img class='removeButton' src='img/trash-can.png'>"
     
-
     // Task buttton functionality
     $('button').click(function(){
         let task = $('.task').val();
@@ -23,8 +14,9 @@ $(document).ready(function(){
         // Check for valid input
         if (task == "" || priority == undefined || list == undefined) {
             $('.error').empty().append('Task, list, and priority required.')
+
         } else {
-            console.log(task + priority + list);
+            
             // Determine which list to add task and if it has tasks already
             if (list == "Home") {
                 $('.error').empty();
@@ -35,10 +27,17 @@ $(document).ready(function(){
             }
         }
     });
+    console.log("Test this function!");
     
-    // click removeButton to remove taskItem (the parent element)
-    // I don't understand why this doesn't work.
+});
+
+// click removeButton to remove taskItem (the parent element)
+// I don't understand why this doesn't work.
+// Is it because everything fires when the page loads, so this element
+// doesn't exist yet?
+$('.taskItem').ready(function(){
     $('.removeButton').click(function(){
+        console.log("Test this function!");
         $(this).parent().remove();
     });
 });
