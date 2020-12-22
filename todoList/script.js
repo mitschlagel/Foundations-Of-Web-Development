@@ -21,10 +21,10 @@ $(document).ready(function(){
         let list = $('.list').val();
         
         // Check for valid input
-        if (task == undefined || priority == undefined || list == undefined) {
+        if (task == "" || priority == undefined || list == undefined) {
             $('.error').empty().append('Task, list, and priority required.')
         } else {
-
+            console.log(task + priority + list);
             // Determine which list to add task and if it has tasks already
             if (list == "Home") {
                 $('.error').empty();
@@ -37,6 +37,7 @@ $(document).ready(function(){
     });
     
     // click removeButton to remove taskItem (the parent element)
+    // I don't understand why this doesn't work.
     $('.removeButton').click(function(){
         $(this).parent().remove();
     });
