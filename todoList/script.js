@@ -36,6 +36,7 @@
     console.log("Test this function!");
     $('body').on('click', '.removeButton', function() {
         $(this).parent().remove();
+        // Make something appear that says "good for you" or something
     });
     
     
