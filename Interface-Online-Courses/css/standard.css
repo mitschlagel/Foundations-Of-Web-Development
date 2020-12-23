@@ -168,7 +168,15 @@ article::before {
     z-index: -1;
 }
 
-#intro {
+article > h2 {
+    background-color: #000060;
+    color: white;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#intro, .boxes {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 10vw;
@@ -195,3 +203,37 @@ article::before {
 #intro::before {
     background-image: url("../images/coding.jpg");
 }
+
+footer {
+    background-color: transparent;
+    padding: 1em;
+    margin: 1em 10vw .5em 10vw;
+    font-size: 0.8em;
+}
+
+#courses:before {
+    background-image: url("images/computer-class.jpg");
+    background-position: center top;
+}
+
+#about:before { 
+    background-image: url("images/kent-teaching.jpg");
+    background-position: center top;
+}
+
+.box {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    background-color: white;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
