@@ -1,4 +1,6 @@
-$(document).ready(function(){
+// rewrite things as individual functions
+
+(document).ready(function(){
 
     // Global variables
     const home = $('.home');
@@ -20,23 +22,22 @@ $(document).ready(function(){
             // Determine which list to add task and if it has tasks already
             if (list == "Home") {
                 $('.error').empty();
-                home.append("<p class='taskItem'>" + task + " " + "<span>" + priority + "</span>" + removeButton + "</p>");          
+                home.append("<p class='taskItem'>" + task + " " + "<span>" + priority + "</span>" + removeButton + "</p>");
+                $('.task').val("");         
             } else if (list == "Work") {
                 $('.error').empty();
                 work.append("<p class='taskItem'>" + task + " " + "<span>" + priority + "</span>" + removeButton + "</p>"); 
+                $('.task').val("");  
             }
         }
     });
-    // click removeButton to remove taskItem (the parent element)
-    // I don't understand why this doesn't work.
-    // Is it because everything fires when the page loads, so this element
-    // doesn't exist yet?
-    console.log("Test this function!");
-    $('.taskItem').ready(function(){
-        $('.removeButton').click(function(){
-            console.log("Test this function!");
-            $(this).parent().remove();
-        });
     
+    // .on() method listens for events and takes 3 parameters, event, element, and function
+    console.log("Test this function!");
+    $('body').on('click', '.removeButton', function() {
+        $(this).parent().remove();
     });
+    
+    
+    
 });
