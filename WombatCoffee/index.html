@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wombat Coffee Roasters</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="header" class="page-header">
+        <div class="title">
+            <h1>Wombat Coffee Roasters</h1>
+            <h2 class="slogan">We love coffee!</h2>
+        </div>
+    </header>
+
+    <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">  
+            Toggle Menu
+        </button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/brew.html">Brew</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside id="hero" class="hero">
+        Welcome to Wombat Coffee Roasters! We are passionate aboutour craft,
+        striving to bring you the best hand-crafted 
+        coffee in the city.
+    </aside>
+    <main id="main">
+        <div class="row">
+            <section class="column">
+                <h2 class="subtitle">Single-origin</h2>
+                <p>
+                    We have built partnerships with small farms around the
+                    world to hand-select beans at the peak of season. We
+                    then carefully roast in <a href="/batchsize.html">small batches</a>.
+                </p>
+            </section>
+            <section class="column">
+                <h2 class="subtitle">Blends</h2>
+                    <p>
+                        Our tasters have put together a selection of carefully
+                        balanced blends. Our famous <a href="/house-blend.html">house blend</a>.
+                    </p>
+            </section>
+            <section class="column">
+                <h2 class="subtitle">Brewing Equipment</h2>
+                    <p>
+                        We offer our favorite kettles, French presses, and pour-over
+                        cones. Come to one of our <a href="/classes.html">brewing classes</a>
+                        to learn how to brew the perfect pour over cup.
+                    </p>
+            </section>
+        </div>
+    </main>
+    
+    <script>
+        $(function() {
+            const button = $("#toggle-menu");
+            button.click(function(event) {
+                event.preventDefault();
+                const menu = $("#main-menu");
+                menu.toggleClass('is-open');
+            });
+        })();   // This () is just like the () after any other function name--makes the script immediately executable.
+        
+    </script>
+</body>
+</html>
