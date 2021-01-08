@@ -1,41 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 html, 
 body {
     margin: 0;
-    font-family: sans-serif;
+    height: 100vh;
+    font-family: 'Staatliches', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;   
 }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header-top {
     background-color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
+    padding-top: 0.5vh;
+}
+
+#logo {
+    height: 14vh;
+    position: relative;
+    left: 0;
+    top: 5vh;
 }
 
 .header-top > nav > a {
     color:rgb(80, 59, 47);
     text-decoration: none;
+    padding-left: 2ch;
     
 }
 
+.header-top > nav {
+    padding-bottom: 2vh;
+    font-size: 1.2rem;
+
+}
+
+.header-top-right {
+    padding-left: 9vw;
+    padding-right: 5vw;
+    color:rgb(80, 59, 47)
+}
+
+.header-top-right .links {
+    font-family: sans-serif;
+    padding-bottom: 4ch;
+}
+
+.header-top-right .links > a {
+    padding-right: 2ch;
+    font-size: small;
+}
+
+.header-top-right .buttons {
+    padding-bottom: 1ch;
+}
+
+.header-top-right .buttons > a {
+    background-color: rgb(207, 206, 203);
+    margin-left: 1ch;
+    padding: 1.5ch;
+}
+
 .header-bottom {
+    padding-top: 1ch;
+    padding-bottom: 1ch;
     background-color: rgb(80, 59, 47);
     display: flex;
     justify-content: center;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
 }
 
 .header-bottom a {
     color: #fff;
     text-decoration: none;
 }
+
 .gallery {
+    color: white;
+    text-shadow: 0.5px 0.5px #000;
+    padding-top: 40vh;
+    height: 100%;
     background-image: url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.gallery > h1 {
+    font-size: 7rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.gallery > a {
+    font-size: 2rem;
+    padding-top: 0;
+    margin-top: 0;
 }
