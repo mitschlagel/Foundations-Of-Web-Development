@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 html, 
 body {
     margin: 0;
     height: 100vh;
-    font-family: 'Staatliches', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;   
@@ -14,7 +14,6 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
-
 
 header {
     display: flex;
@@ -38,19 +37,19 @@ header {
     height: 14vh;
     position: relative;
     left: 0;
-    top: 5vh;
+    top: 3.5vh;
 }
 
 .header-top > nav > a {
     color:rgb(80, 59, 47);
     text-decoration: none;
     padding-left: 2ch;
-    
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .header-top > nav {
     padding-bottom: 2vh;
-    font-size: 1.2rem;
 
 }
 
@@ -62,7 +61,8 @@ header {
 
 .header-top-right .links {
     font-family: sans-serif;
-    padding-bottom: 4ch;
+    padding-bottom: 3ch;
+    padding-left: 2ch;
 }
 
 .header-top-right .links > a {
@@ -76,8 +76,9 @@ header {
 
 .header-top-right .buttons > a {
     background-color: rgb(207, 206, 203);
-    margin-left: 1ch;
+    margin-left: 0.8ch;
     padding: 1.5ch;
+    font-weight: 700;
 }
 
 .header-bottom {
@@ -86,8 +87,9 @@ header {
     background-color: rgb(80, 59, 47);
     display: flex;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.05rem;
+    font-weight: 700;
 }
 
 .header-bottom a {
@@ -109,14 +111,15 @@ header {
 }
 
 .gallery > h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     padding-bottom: 0;
     margin-bottom: 0;
 
 }
 
 .gallery > a {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     padding-top: 0;
     margin-top: 0;
 }
