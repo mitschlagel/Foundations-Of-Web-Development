@@ -4,6 +4,7 @@ html,
 body {
     margin: 0;
     height: 100%;
+    width: 100vw;
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-direction: column;
@@ -108,6 +109,10 @@ header {
     text-align: center;
 }
 
+.content {
+    margin: 0;
+    padding: 0;
+}
 
 .content > h1 {
     font-size: 5rem;
@@ -120,5 +125,41 @@ header {
     font-weight: 700;
     padding-top: 0;
     margin-top: 0;
+}
+
+.arrow-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.arrow-buttons > button {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 55%; 
+    height: 100px; 
+    width: 50px;
+    border: none; 
+    background-color: rgba(231, 234, 235, 0.8);
+    color:rgb(80, 59, 47);
+    font-size: 2rem;
+
+}
+
+.arrow-buttons .button-left {
+    text-align: left;
+    left: 0;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;     
+}
+
+.arrow-buttons .button-right {
+    text-align: right;
+    right: 0;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px; 
 }
 
