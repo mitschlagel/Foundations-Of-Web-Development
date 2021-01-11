@@ -3,11 +3,10 @@
 html, 
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;   
 }
 
 a {
@@ -30,7 +29,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-top: 0.5vh;
 }
 
 #logo {
@@ -50,7 +48,6 @@ header {
 
 .header-top > nav {
     padding-bottom: 2vh;
-
 }
 
 .header-top-right {
@@ -97,10 +94,10 @@ header {
     text-decoration: none;
 }
 
-.gallery {
+.main {
     color: white;
-    text-shadow: 0.5px 0.5px #000;
-    padding-top: 40vh;
+    text-shadow: 0.3px 0.3px #000;
+    padding-top: 30vh;
     height: 100%;
     background-image: url('../img/background.jpg');
     background-position: center;
@@ -108,18 +105,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.gallery > h1 {
+
+.content > h1 {
     font-size: 5rem;
     padding-bottom: 0;
     margin-bottom: 0;
-
 }
 
-.gallery > a {
-    font-size: 1.5rem;
+.content > a {
+    font-size: 1.7rem;
     font-weight: 700;
     padding-top: 0;
     margin-top: 0;
 }
+
