@@ -46,16 +46,14 @@ header {
 .header-bottom {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
-    
 }
 
 nav {
     text-decoration: none;
     padding-right: 5vw;
     padding-bottom: 1.4vw;
-    /* align-self: flex-end; */
 }
 
 
