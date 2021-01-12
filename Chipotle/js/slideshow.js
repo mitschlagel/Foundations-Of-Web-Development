@@ -1,9 +1,17 @@
 $(document).ready(function() {
+    let i = 0;
+    const images = ["url(img/background.jpg)", "url(img/background2.jpg)", "url(img/background3.jpg)"]
     $(".button-left").click(function() {
-        $(".main").css("background-image", "url(img/background.jpg)");
+        if (i !== 0) {
+            i -= 1;
+        }
+        $(".main").css("background-image", images[i]);  
     });
     $(".button-right").click(function() {
-        $(".main").css("background-image", "url(img/background2.jpg)");
+        if (i !== images.length - 1) {
+            i += 1;
+        }
+        $(".main").css("background-image", images[i]);
     });
 
 });
