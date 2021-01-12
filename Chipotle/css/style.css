@@ -146,6 +146,7 @@ header {
     background-color: rgba(231, 234, 235, 0.8);
     color:rgb(80, 59, 47);
     font-size: 2rem;
+    cursor: pointer;
 
 }
 
