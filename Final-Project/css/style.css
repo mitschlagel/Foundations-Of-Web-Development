@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;900&family=Rubik+Mono+One&display=swap');
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav > a {
+    color: #000;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding-right: 1.4ch;
+}
+
+a:hover {
+    color: rgb(73, 134, 206);
+}
+
+a:visited {
+    color: #000;
+}
+
+header {
+    padding: 0 5vw 0 5vw;
+    background-color: #fff;
+    height: 30vh;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 2rem;
+    color: rgb(72, 73, 75);
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+nav {
+    text-decoration: none;
+    padding-right: 5vw;
+    padding-bottom: 1.4vw;
+    /* align-self: flex-end; */
+}
+
+
+.name {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#first-name {
+    color: rgb(73, 134, 206);
+}
+
+#last-name {
+    color: #fff;
+}
+
+main {
+    padding: 0 5vw 0 0;
+    background-image: url("../img/background2.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 70vh;
+}
+
