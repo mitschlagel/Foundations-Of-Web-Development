@@ -7,19 +7,23 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-nav > a {
+a {
     color: #000;
     font-size: 1.6rem;
     text-decoration: none;
-    padding-right: 1.4ch;
+    padding-left: 1.5ch;
 }
 
 a:hover {
     color: rgb(73, 134, 206);
 }
 
-a:visited {
-    color: #000;
+a:active {
+    color: rgb(73, 134, 206);
+}
+
+ #current {
+    color: rgb(73, 134, 206);
 }
 
 header {
@@ -81,3 +85,8 @@ main {
     height: 70vh;
 }
 
+footer {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: smaller;
+}
