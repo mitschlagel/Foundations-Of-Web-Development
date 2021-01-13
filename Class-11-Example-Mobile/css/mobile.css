@@ -1,0 +1,41 @@
+
+    nav {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+
+    nav.is-open {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    main {
+        font-size: 1.2em;
+        left: 20%;
+	    top: 20%;
+        white-space: normal;
+    }
+
+    main a {
+        border-width:0;
+        margin-top: 30px;
+        padding-top: calc(.5em + 3px);
+        padding-bottom: calc(.5em + 3px);
+        width: calc(20ch + 5px);
+        background: linear-gradient(90deg, blue, lightblue, turquoise);
+    }
+
+    .teaser {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
