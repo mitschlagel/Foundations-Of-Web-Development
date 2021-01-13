@@ -3,10 +3,12 @@ body {
     margin: 0;
     font-family: Poppins, sans-serif;
     font-size: 2vh;
-    color: white;
-    background-image: url('../img/slider-1.jpg');
+	color: white;
+	background-image: url('../img/slider-1.jpg');
 	background-size: cover;
+	background-position: 30% 50%;
 	background-repeat: no-repeat;
+    
 }
 
 header {
@@ -53,6 +55,7 @@ main {
 	transform: translate(-50%, calc(-50% + 2em));
 	white-space: nowrap;
 	text-align: center;
+	
 }
 
 main a {
