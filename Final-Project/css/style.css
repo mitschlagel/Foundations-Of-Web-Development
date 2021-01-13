@@ -29,7 +29,7 @@ a:active {
 header {
     padding: 0 5vw 0 5vw;
     background-color: #fff;
-    height: 30vh;
+    height: 25vh;
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     display: flex;
@@ -82,7 +82,7 @@ main {
     background-image: url("../img/background2.jpg");
     background-position: bottom;
     background-size: cover;
-    height: 70vh;
+    height: 75vh;
 }
 
 footer {
