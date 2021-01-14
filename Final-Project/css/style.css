@@ -44,7 +44,7 @@ header {
     justify-content: flex-end;
     align-items: flex-end;
     font-size: 2rem;
-    color: rgb(72, 73, 75);
+    color: rgba(72, 73, 75, 0.8);
 }
 
 .header-bottom {
@@ -84,6 +84,20 @@ main {
     background-size: cover;
     height: 75vh;
 }
+
+.main-content {
+    padding-left: 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+
 
 footer {
     color: #fff;
