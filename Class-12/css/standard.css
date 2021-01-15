@@ -39,15 +39,18 @@ nav > a {
 }
 
 nav > a:hover {
-	color: rgb(125, 17, 163);
+	color: rgb(208, 62, 159);
 }
 
 nav > a > sup {
 	font-size: 1ch;
 }
 
+/*********************************
+* 			Home
+**********************************/
 
-main {
+#home {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -56,7 +59,7 @@ main {
 	text-align: center;
 }
 
-main a {
+#home a {
 	align-self: center;
 	background-color: rgb(208, 62, 159);
 	font-weight: 200;
@@ -69,24 +72,92 @@ main a {
 	border-radius: 45px;
 }
 
-main a:hover { 
+#home a:hover { 
 	color: gainsboro;
 	box-shadow: 0 0 25px rgb(208, 62, 159); 
 }
 
-main > a > span {
+#home > a > span {
 	padding-left: 2ch;
 }
 
-main h1 {
+#home h1 {
 	font-family: 'League Script', cursive;
 	font-size: 15vh;
 	padding: 0;
 	margin: 15vh 0 0 0;
 }
 
-main h2 {
+#home h2 {
 	font-size: 4vh;
 	font-weight: 200;
 	margin-bottom: 15vh;
+}
+
+/*********************************
+* 			Services
+**********************************/
+
+#services {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 2em;
+	padding-top: 15vh;
+	text-align: center;
+}
+
+#services h1 {
+	font-family: Padauk, Arial, Helvetica, sans-serif;
+	font-size: 10vh;
+	padding: 0;
+	letter-spacing: 8px;
+	margin: 0;
+	padding: 0;
+}
+
+#services p {
+	font-family: Poppins, sans-serif;
+	font-size: 1rem;
+}
+#services .content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 40px 0 40px;
+
+}
+
+#services .content > .box {
+	text-align: justify;
+	padding: 1vw;
+}
+
+
+
+footer {
+	background-color: rgb(31, 30, 87);
+    width: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0 2rem 0;
+}
+
+footer > span {
+	padding-right: 5ch;
+}
+
+footer > a > img {
+	width: 3ch;
+	padding-right: 1ch;
+}
+
+footer a {
+	text-decoration: none;
+	color:rgb(208, 62, 159);
+}
+
+footer a:hover { 
+	color: fff;
 }
