@@ -1,176 +1,245 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Poppins:wght@200;400&family=Padauk:wght@700&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Script&family=Poppins:wght@200;400&family=Padauk:wght@700&family=Open+Sans&display=swap");
 
 html,
 body {
-	background-image: url('../img/background.jpg');
-    margin: 0;
-    font-family: Poppins, sans-serif;
-    font-size: 2vh;
-    color: white;
+  background-image: url("../img/background.jpg");
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 2vh;
+  color: white;
 }
 
+
+
+.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-top: 15vh;
+		text-align: center;
+		height: 75vh;
+}
+
+.title {
+	text-align: left;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-size: 5vh;
+	margin: 0;
+	padding-left: 5vw;
+}
+
+
+/*********************************
+* 			Header				 *
+**********************************/
+
 header {
-	background-color: rgb(31, 30, 87);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-	justify-content: space-between;
+  background-color: rgb(31, 30, 87);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 header > span {
-	font-family: Padauk, Arial, Helvetica, sans-serif;
-	letter-spacing: 8px;
-    margin-left: 10vw;
-    font-size: 1.3em;
-	line-height: 5rem;
-	vertical-align: middle;
-	text-transform: uppercase;
-
+  font-family: Padauk, Arial, Helvetica, sans-serif;
+  letter-spacing: 8px;
+  margin-left: 10vw;
+  font-size: 1.3em;
+  line-height: 5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 nav > a {
-	color: white;
-	text-decoration: none;
-    margin-right: 3vw;
-    line-height: 5em;
-	vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  margin-right: 3vw;
+  line-height: 5em;
+  vertical-align: middle;
 }
 
 nav > a:hover {
-	color: rgb(208, 62, 159);
+  color: rgb(208, 62, 159);
 }
 
 nav > a > sup {
-	font-size: 1ch;
+  font-size: 1ch;
 }
 
 /*********************************
-* 			Home
+* 			Home				 *
 **********************************/
 
-#home {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	font-size: 2em;
-	padding-top: 15vh;
-	text-align: center;
+
+.main #home {
+	margin-top: 0;
 }
+
 
 #home a {
-	align-self: center;
-	background-color: rgb(208, 62, 159);
-	font-weight: 200;
-	color: white;
-	vertical-align: middle;
-	font-size: 1rem;
-	text-decoration: none;
-	padding: 0.6em 2em;
-	border: 3px solid transparent;
-	border-radius: 45px;
+  align-self: center;
+  background-color: rgb(208, 62, 159);
+  font-weight: 200;
+  color: white;
+  vertical-align: middle;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.6em 2em;
+  border: 3px solid transparent;
+  border-radius: 45px;
 }
 
-#home a:hover { 
-	color: gainsboro;
-	box-shadow: 0 0 25px rgb(208, 62, 159); 
+#home a:hover {
+  color: gainsboro;
+  box-shadow: 0 0 25px rgb(208, 62, 159);
 }
 
 #home > a > span {
-	padding-left: 2ch;
+  padding-left: 2ch;
 }
 
 #home h1 {
-	font-family: 'League Script', cursive;
-	font-size: 15vh;
-	padding: 0;
-	margin: 15vh 0 0 0;
+  font-family: "League Script", cursive;
+  font-size: 15vh;
+  padding: 0;
+  margin: 0;
 }
 
 #home h2 {
-	font-size: 4vh;
-	font-weight: 200;
-	margin-bottom: 15vh;
+  font-size: 4vh;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
 }
 
 /*********************************
-* 			Services
+* 			Services			 *
 **********************************/
 
 #services {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	font-size: 2em;
-	padding-top: 15vh;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 2em;
+  padding-top: 15vh;
+  text-align: center;
 }
 
-#services h1 {
-	font-family: Padauk, Arial, Helvetica, sans-serif;
-	font-size: 10vh;
-	padding: 0;
-	letter-spacing: 8px;
+#services .title {
+  text-align: left;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  margin: 0;
+  padding-left: 5vw;
+}
+
+#services h2 {
+	font-family: Poppins, sans-serif;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+#services .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 40px 0 40px;
+}
+
+#services .content > .box {
+  width: 25%;
+  text-align: justify;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+/*********************************
+* 			Team				 *
+**********************************/
+
+
+#team h1 {
 	margin: 0;
 	padding: 0;
 }
 
-#services h2 {
-	font-weight: 200;
-	text-transform: uppercase;
-	font-size: 2rem;
-	font-family: Poppins, Arial, Helvetica, sans-serif;
-}
-
-#services p {
-	font-family: "Open Sans", sans-serif;
-	font-size: 1rem;
-}
-
-#services .content {
+#team .content {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	margin: 0 40px 0 40px;
-
+	padding: 0 10vw 0 10vw;
 }
-
-
-
-#services .content > .box {
-	text-align: justify;
-	padding: 2vw;
+#team .person {
+	padding: 20px;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
+#team .person > div {
+	text-align: left;
+}
 
+#team h3 {
+	margin: 0;
+	font-family: Poppins, sans-serif;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+#team h4 {
+	text-transform: uppercase;
+}
+
+#team .person > img {
+	padding-left: 0 20px 0 20px;
+	width: 180px;
+	border-radius: 50%;
+	align-self: flex-start;
+}
+
+/*********************************
+* 			Footer				 *
+**********************************/
 
 footer {
-	background-color: rgb(31, 30, 87);
-    width: 100%;
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem 0 2rem 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(31, 30, 87);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
 }
 
 footer > span {
-	padding-right: 5ch;
+  padding-right: 5ch;
 }
 
 footer > a > img {
-	width: 3ch;
-	padding-right: 1ch;
+  width: 3ch;
+  padding-right: 1ch;
 }
 
 footer a {
-	text-decoration: none;
-	color:rgb(208, 62, 159);
+  text-decoration: none;
+  color: rgb(208, 62, 159);
 }
 
-footer a:hover { 
-	color: fff;
+footer a:hover {
+  color: gainsboro;
+  text-shadow: 0 0 20px rgb(208, 62, 159);
 }
