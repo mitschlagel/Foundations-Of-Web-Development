@@ -9,8 +9,6 @@ body {
   color: white;
 }
 
-
-
 .main {
 		display: flex;
 		flex-direction: column;
@@ -21,16 +19,15 @@ body {
 }
 
 .title {
-	text-align: left;
+	text-align: center;
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-size: 5vh;
 	margin: 0;
-	padding-left: 5vw;
 }
 
 
 /*********************************
-* 			Header				 *
+* 			      Header    				 *
 **********************************/
 
 header {
@@ -47,7 +44,7 @@ header > span {
   font-family: Padauk, Arial, Helvetica, sans-serif;
   letter-spacing: 8px;
   margin-left: 10vw;
-  font-size: 1.3em;
+  font-size: 2em;
   line-height: 5rem;
   vertical-align: middle;
   text-transform: uppercase;
@@ -69,8 +66,12 @@ nav > a > sup {
   font-size: 1ch;
 }
 
+nav > a.active {
+  color: rgb(208, 62, 159);
+}
+
 /*********************************
-* 			Home				 *
+* 			       Home	             *
 **********************************/
 
 
@@ -90,11 +91,12 @@ nav > a > sup {
   padding: 0.6em 2em;
   border: 3px solid transparent;
   border-radius: 45px;
+  box-shadow: 0 0 25px rgb(208, 62, 159);
 }
 
 #home a:hover {
   color: gainsboro;
-  box-shadow: 0 0 25px rgb(208, 62, 159);
+  
 }
 
 #home > a > span {
@@ -116,7 +118,7 @@ nav > a > sup {
 }
 
 /*********************************
-* 			Services			 *
+* 		      	Services			     *
 **********************************/
 
 #services {
@@ -126,14 +128,6 @@ nav > a > sup {
   font-size: 2em;
   padding-top: 15vh;
   text-align: center;
-}
-
-#services .title {
-  text-align: left;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-size: 5vh;
-  margin: 0;
-  padding-left: 5vw;
 }
 
 #services h2 {
@@ -163,7 +157,7 @@ nav > a > sup {
 }
 
 /*********************************
-* 			Team				 *
+* 			       Team				       *
 **********************************/
 
 
@@ -175,7 +169,13 @@ nav > a > sup {
 #team .content {
 	display: flex;
 	flex-direction: row;
-	padding: 0 10vw 0 10vw;
+  padding: 0 10vw 0 10vw;
+}
+
+#team .subtitle {
+  align-self: center;
+  text-align: justify;
+  width: 65vw;
 }
 #team .person {
 	padding: 20px;
@@ -209,20 +209,24 @@ nav > a > sup {
 	align-self: flex-start;
 }
 
+#team p {
+  font-family: "Open Sans", sans-serif;
+}
+
 /*********************************
-* 			Footer				 *
+* 			      Footer				     *
 **********************************/
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; 
   background-color: rgb(31, 30, 87);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 footer > span {
