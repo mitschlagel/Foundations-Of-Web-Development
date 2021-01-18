@@ -2,11 +2,10 @@
 
 html,
 body {
-  background-image: url("../img/background.jpg");
   margin: 0;
   font-family: Poppins, sans-serif;
   font-size: 2vh;
-  color: white;
+  
 }
 
 .main {
@@ -15,14 +14,29 @@ body {
 		justify-content: space-around;
 		padding-top: 15vh;
 		text-align: center;
-		height: 75vh;
+		height: 85vh;
 }
 
 .title {
-	text-align: center;
+  display: flex;
+  flex-direction: column;
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-size: 5vh;
 	margin: 0;
+}
+
+.section-tag {
+  align-self: center;
+  margin-bottom: 1.2rem;
+  background-color: #fff;
+  font-weight: 200;
+  color: rgb(208, 62, 159);
+  vertical-align: middle;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.6em 2em;
+  border: 1px solid rgb(208, 62, 159);
+  border-radius: 45px;
 }
 
 
@@ -38,13 +52,14 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  color: white;
 }
 
 header > span {
   font-family: Padauk, Arial, Helvetica, sans-serif;
   letter-spacing: 8px;
   margin-left: 10vw;
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: 5rem;
   vertical-align: middle;
   text-transform: uppercase;
@@ -75,8 +90,14 @@ nav > a.active {
 **********************************/
 
 
-.main #home {
-	margin-top: 0;
+#home {
+  margin-top: 0;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
 }
 
 
@@ -218,15 +239,13 @@ nav > a.active {
 **********************************/
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0; 
   background-color: rgb(31, 30, 87);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0 1rem 0;
+  color: white;
 }
 
 footer > span {
