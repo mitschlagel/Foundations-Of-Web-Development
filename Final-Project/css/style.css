@@ -75,30 +75,44 @@ nav {
   color: #fff;
 }
 
-main {
+.landing-image {
   padding: 0 5vw 0 0;
   background-image: url("../img/background2.jpg");
-  background-position: top;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 75vh;
 }
 
 .main-content {
   margin-top: 5vh;
-  margin-left: 10vw;
+  margin-bottom: 5vh;
+  margin-left: 20vw;
   width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(6px);
 }
 
-.content-container {
+nav.small-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10vh;
+  left: 2vw;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.resume-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: flex-start;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 img.rounded {

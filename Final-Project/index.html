@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="header-top">
             <div class="title">
                 technologist and musician
@@ -15,11 +15,11 @@
             
         </div>
         <div class="header-bottom">
-            <nav>
-                <a href="resume.html">resume</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="music.html">music</a>
-                <a href="contact.html">contact</a>
+            <nav class="header-nav">
+                <a href="#resume">resume</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#music">music</a>
+                <a href="#contact">contact</a>
                 
             </nav>
             <div id="first-name" class="name">
@@ -28,16 +28,66 @@
         </div>
     </header>
     <main>
-        <div id ="last-name" class="name">
-            jones
-        </div>
-        <section class="no-content">
+        <section class="landing-image">
+            <div id ="last-name" class="name">
+                jones
+            </div>
+            <div class="no-content">
+                
+            </div>
             
         </section>
-        <footer>
-            
-        </footer>
+        <nav class="small-nav">
+            <a href="#home">home</a>
+            <a href="#resume">resume</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#music">music</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <section class="main-content" id="resume">
+            <article class="resume-header">
+              <div id="bio-header">
+                <h1>Front-End Web Developer with Full Stack Aspirations</h1>
+                <p>
+                    Graduate of AIM Code School.<br>
+                    Computer science student at Creighton Univeristy.<br />
+                    Classical percussionist and jazz drummer.
+                </p>
+    
+                <div class="social-icons">
+                  <a href="http://www.linkedin.com">
+                    <img src="img/icons/linkedin.svg" class="icons" />
+                  </a>
+                  <a href="http://www.github.com">
+                    <img src="img/icons/github.svg" class="icons" />
+                  </a>
+                  <a href="https://www.last.fm/user/Spormcer">
+                    <img src="img/icons/lastfm.svg" class="icons" />
+                  </a>
+                </div>
+              </div>
+              <img
+                src="img/headshot.jpg"
+                alt="spencer's profile photo"
+                class="rounded"
+              />
+            </article>
+            <article class="skills">
+                <h1>Languages and Frameworks</h1>
+                <p>Most Experience: HTML5, CSS3</p>
+                <p>Some Exeprience: Python, JavaScript, jQuery C, SQL (SQLite3)</p> 
+                <p>Academic Study: Python, Java</p>
+                
+            </article>
+          </section>
+          <section class="landing-image">
+
+          </section>
+          
     </main>
+    <footer>
+                
+    </footer>
     
     
 </body>
