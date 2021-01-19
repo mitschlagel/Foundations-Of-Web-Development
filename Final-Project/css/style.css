@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;900&family=Rubik+Mono+One&display=swap");
 
-
 html,
 body {
   margin: 0;
@@ -27,7 +26,7 @@ a:active {
 }
 
 header {
-  padding: 0 5vw 0 5vw;
+  padding: 2vh 5vw 0 5vw;
   background-color: #fff;
   height: 25vh;
   font-family: "Playfair Display", serif;
@@ -90,29 +89,38 @@ nav {
   margin-bottom: 5vh;
   margin-left: 20vw;
   width: 80vw;
+  
 }
 
-nav.small-nav {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 10vh;
+.small-nav {
+  position: absolute;
   left: 2vw;
+  top: 112vh;
+  display: inline-flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.small-nav.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.small-nav > a {
+  font-size: 1.5rem;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 1.5rem;
 }
 
 .resume-header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 img.rounded {
@@ -124,16 +132,15 @@ img.rounded {
 }
 
 .social-icons {
-    padding:0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
 img.icons {
-  height: 3rem;
-  width: auto;
+  width: 2ch;
+  margin: 0;
+  padding: 0;
 }
 
 .main-content h1 {
@@ -146,17 +153,24 @@ img.icons {
   font-size: 1rem;
 }
 
+#bio-right {
+  display: flex;
+  flex-direction: column;
+  align-items: centerxs;
+}
+
 hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: rgba(72, 73, 75, 0.8);
-    border-width: 5px;
-    width: 60vw;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+  border-style: none;
+  border-top-style: dotted;
+  border-color: rgba(72, 73, 75, 0.8);
+  border-width: 5px;
+  width: 60vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 footer {
+  height: 1000px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: smaller;
