@@ -4,6 +4,7 @@
 
     <link rel="stylesheet" href="css/standard.css" />
     <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <script src="js/slideshow.js"></script>
   </head>
   <body>
     <header>
@@ -85,9 +86,58 @@
         </div>
       </article>
     </section>
+    <section class="main" id="portfolio">
+      <article class="title">
+        <div class="section-tag">Portfolio</div>
+        <span>Diverse Clients Across Many Industries</span>
+      </article>
+      <article class="content">
+        <div class="carousel">
+
+          <!-- Portfolio items -->
+          <div class="slide">
+            <img src="img/portfolio/1.png" alt="portfolio item 1">
+          </div>
+          <div class="slide">
+            <img src="img/portfolio/2.png" alt="portfolio item 2">
+          </div>
+          <div class="slide">
+            <img src="img/portfolio/3.png" alt="portfolio item 3">
+          </div>
+          <div class="slide">
+            <img src="img/portfolio/4.png" alt="portfolio item 4">
+          </div>
+          
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Item Caption -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="img/portfolio/1.png" style="width:100%" onclick="currentSlide(1)" alt="The Kennedy Center">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/portfolio/2.png" style="width:100%" onclick="currentSlide(2)" alt="PayPal">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/portfolio/3.png" style="width:100%" onclick="currentSlide(3)" alt="Nescafe">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/portfolio/4.png" style="width:100%" onclick="currentSlide(4)" alt="Slack">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
     <section class="main" id="team">
       <article class="title">
-        <div class="section-tag">Team</div>
+        <div class="section-tag" id="team-tag">Team</div>
        <span>World-Class Designers and Developers</span>
       </article>
       <article class="subtitle">

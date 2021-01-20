@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Script&family=Poppins:wght@200;400&family=Padauk:wght@700&family=Open+Sans&display=swap");
 
+
+
 html,
 body {
   margin: 0;
@@ -14,7 +16,10 @@ body {
 		justify-content: space-around;
 		padding-top: 15vh;
 		text-align: center;
-		height: 85vh;
+    height: 85vh;
+    margin-bottom: 5vh;
+    padding-bottom: 15vh;
+    margin-bottom: 40vh;
 }
 
 .title {
@@ -22,7 +27,6 @@ body {
   flex-direction: column;
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-size: 5vh;
-	margin: 0;
 }
 
 .section-tag {
@@ -53,6 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   color: white;
+  z-index: 2;
 }
 
 header > span {
@@ -178,8 +183,105 @@ nav > a.active {
 }
 
 /*********************************
+* 		      	Portfolio			     *
+**********************************/
+#portfolio {
+  box-sizing: border-box;
+}
+
+#portfolio .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  height: 45vh;
+  width: 70%;
+  margin-top: 10vh;
+  
+}
+
+.slide {
+  display: none;
+}
+
+.slide > img {
+  width: 100%;
+}
+
+#portfolio .cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(31, 30, 87);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 0 3px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(208, 62, 159, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  background-color: rgb(31, 30, 87);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*********************************
 * 			       Team				       *
 **********************************/
+
 
 
 #team h1 {

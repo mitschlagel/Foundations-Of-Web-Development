@@ -93,28 +93,30 @@ nav {
 }
 
 .small-nav {
-  position: absolute;
-  left: 2vw;
-  top: 112vh;
-  display: inline-flex;
+  
+  display: flex;
   flex-direction: column;
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
 
 .small-nav.is-visible {
+  position: fixed;
+  left: 2vw;
+  top: 3.2vh;
   opacity: 1;
   transform: none;
   visibility: visible;
+  
 }
 
 .small-nav > a {
   font-size: 1.5rem;
   font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-weight: 900;
 }
 
 .resume-header {
@@ -138,9 +140,9 @@ img.rounded {
 }
 
 img.icons {
-  width: 2ch;
-  margin: 0;
+  margin-top: 1rem;
   padding: 0;
+  width: 1.6rem;
 }
 
 .main-content h1 {
