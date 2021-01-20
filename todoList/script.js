@@ -1,6 +1,6 @@
 // rewrite things as individual functions
 
-(document).ready(function(){
+$(document).ready(function(){
 
     // Global variables
     const home = $('.home');
