@@ -14,15 +14,15 @@ a {
 }
 
 a:hover {
-  color: rgb(73, 134, 206);
+  color: rgb(46, 102, 176);
 }
 
 a:active {
-  color: rgb(73, 134, 206);
+  color: rgb(46, 102, 176);
 }
 
 #current {
-  color: rgb(73, 134, 206);
+  color: rgb(46, 102, 176);
 }
 
 header {
@@ -67,7 +67,7 @@ nav {
 }
 
 #first-name {
-  color: rgb(73, 134, 206);
+  color: rgb(46, 102, 176);
 }
 
 #last-name {
@@ -89,21 +89,13 @@ nav {
   margin-bottom: 5vh;
   margin-left: 20vw;
   width: 80vw;
-  
-}
-
-.spacer {
-  height: 50vh;
-  background-image: url("../img/background2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 100vh;
 }
 
 .small-nav {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -118,7 +110,6 @@ nav {
   opacity: 1;
   transform: none;
   visibility: visible;
-  
 }
 
 .small-nav > a {
@@ -127,18 +118,37 @@ nav {
   font-weight: 900;
 }
 
-.resume-header {
+.bio {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+}
+
+.skill-green {
+  background-color: rgba(144, 238, 144, 0.5);
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+}
+
+.skill-yellow {
+  background-color: rgba(255, 255, 0, 0.5);
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+}
+
+.skill-blue {
+  background-color: rgba(173, 216, 230, 0.5);
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
 }
 
 img.rounded {
-  object-fit: cover;
+  height: 160px;
+  width: 160px;
+  margin: 25px 0 0 100px;
   border-radius: 50%;
-  height: 230px;
-  width: 230px;
-  padding: 25px;
+  object-fit: cover;
+  margin-bottom: 0;
+  display: inline-block;
 }
 
 .social-icons {
@@ -157,26 +167,26 @@ img.icons {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-#bio-header > p {
+.bio > p {
   font-size: 1rem;
 }
 
-#bio-right {
-  display: flex;
-  flex-direction: column;
-  align-items: centerxs;
+.bio > h2 {
+  margin: 0;
+  padding: 0;
 }
 
 hr {
   border-style: none;
   border-top-style: dotted;
-  border-color: rgba(72, 73, 75, 0.8);
-  border-width: 5px;
+  border-color: #000;
+  border-width: 3px;
   width: 60vw;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 footer {

@@ -15,30 +15,30 @@ $(document).ready(function() {
     $("a[href='#home']").click(function() {
         $('html, body').animate({
             scrollTop: $("#home").offset().top
-        }, 2000);
+        }, 1500);
     });
 
     $("a[href='#resume']").click(function() {
         $('html, body').animate({
             scrollTop: $("#resume").offset().top
-        }, 2000);
+        }, 1500);
     });
 
     $("a[href='#portfolio']").click(function() {
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top
-        }, 2000);
+        }, 1500);
     });
     
     $("a[href='#music']").click(function() {
         $('html, body').animate({
             scrollTop: $("#music").offset().top
-        }, 2000);
+        }, 1500);
     });
 
     $("a[href='#contact']").click(function() {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
-        }, 2000);
+        }, 1500);
     });
 });
