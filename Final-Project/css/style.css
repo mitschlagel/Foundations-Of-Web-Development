@@ -92,21 +92,29 @@ nav {
   
 }
 
+.spacer {
+  height: 50vh;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .small-nav {
-  
   display: flex;
   flex-direction: column;
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
 
 .small-nav.is-visible {
   position: fixed;
   left: 2vw;
-  top: 3.2vh;
+  top: 4vh;
   opacity: 1;
   transform: none;
   visibility: visible;
@@ -136,7 +144,7 @@ img.rounded {
 .social-icons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 img.icons {

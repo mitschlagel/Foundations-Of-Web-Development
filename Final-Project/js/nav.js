@@ -1,14 +1,44 @@
 $(document).ready(function() {
+
+    // Fades secondary nav into view on scroll
     $(window).scroll(function() {
-        $('.small-nav').each(function() {
-            let top_of_element = $(this).offset().top;
-            let bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-            let top_of_screen = $(window).scrollTop();
+        let scroll = $(window).scrollTop();
+
+        if (scroll >= 500) {
+            $(".small-nav").addClass("is-visible");
+        } else {
+            $(".small-nav").removeClass("is-visible");
+        }
+    });
+
+    // Animates a slow scroll to each section when clicked on the nav
+    $("a[href='#home']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 2000);
+    });
+
+    $("a[href='#resume']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#resume").offset().top
+        }, 2000);
+    });
+
+    $("a[href='#portfolio']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 2000);
+    });
     
-            if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-                $(this).addClass('is-visible');
-            }
-        });
+    $("a[href='#music']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#music").offset().top
+        }, 2000);
+    });
+
+    $("a[href='#contact']").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 2000);
     });
 });
