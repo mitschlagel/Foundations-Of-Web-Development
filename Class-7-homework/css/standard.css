@@ -1,0 +1,50 @@
+html, body {
+	font-family: sans-serif;
+	font-size: 3vh;
+	color: #303030;
+}
+
+h1 {
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+}
+.left {
+    grid-area: left;
+}
+.middle {
+    grid-area: middle;
+}
+.right {
+    grid-area: right;
+}
+.footer-left {
+    grid-area: footer-left;
+}
+
+.footer-right {
+    grid-area: footer-right;
+}
+
+
+.grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'left middle middle right'
+        'footer-left footer-left footer-right footer-right';
+    grid-gap: 0.25em;
+    padding: 0.25em;
+    background-color: #00a000;
+
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+
+}
