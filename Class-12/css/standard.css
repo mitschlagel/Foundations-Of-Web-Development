@@ -1,48 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Script&family=Poppins:wght@200;400&family=Padauk:wght@700&family=Open+Sans&display=swap");
 
-
-
 html,
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
   font-size: 2vh;
-  
+  height: 100vh;
 }
 
 .main {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		padding-top: 15vh;
-		text-align: center;
-    height: 85vh;
-    margin-bottom: 5vh;
-    padding-bottom: 15vh;
-    margin-bottom: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+  height: 80vh;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
 }
 
 .title {
   display: flex;
   flex-direction: column;
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-	font-size: 5vh;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 5vh;
 }
-
-.section-tag {
-  align-self: center;
-  margin-bottom: 1.2rem;
-  background-color: #fff;
-  font-weight: 200;
-  color: rgb(208, 62, 159);
-  vertical-align: middle;
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.6em 2em;
-  border: 1px solid rgb(208, 62, 159);
-  border-radius: 45px;
-}
-
 
 /*********************************
 * 			      Header    				 *
@@ -53,6 +40,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -64,7 +52,7 @@ header > span {
   font-family: Padauk, Arial, Helvetica, sans-serif;
   letter-spacing: 8px;
   margin-left: 10vw;
-  font-size: 1.6em;
+  font-size: 1.2em;
   line-height: 5rem;
   vertical-align: middle;
   text-transform: uppercase;
@@ -94,18 +82,6 @@ nav > a.active {
 * 			       Home	             *
 **********************************/
 
-
-#home {
-  margin-top: 0;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
-}
-
-
 #home a {
   align-self: center;
   background-color: rgb(208, 62, 159);
@@ -122,7 +98,6 @@ nav > a.active {
 
 #home a:hover {
   color: gainsboro;
-  
 }
 
 #home > a > span {
@@ -148,7 +123,6 @@ nav > a.active {
 **********************************/
 
 #services {
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 2em;
@@ -157,11 +131,11 @@ nav > a.active {
 }
 
 #services h2 {
-	font-family: Poppins, sans-serif;
-	text-transform: uppercase;
-	font-size: 2rem;
-	font-weight: 200;
-	letter-spacing: 2px;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 #services .content {
@@ -175,7 +149,6 @@ nav > a.active {
   width: 25%;
   text-align: justify;
   padding: 2vw;
-  display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Open Sans", sans-serif;
@@ -185,113 +158,56 @@ nav > a.active {
 /*********************************
 * 		      	Portfolio			     *
 **********************************/
-#portfolio {
-  box-sizing: border-box;
-}
-
-#portfolio .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
-}
-
-.carousel {
-  display: flex;
+.slideshow {
   flex-direction: column;
-  justify-content: flex-end;
-  position: absolute;
-  height: 45vh;
-  width: 70%;
-  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
   
 }
 
-.slide {
-  display: none;
+.current-slide {
+  background-image: url("../img/portfolio/1.png");
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.slide > img {
+.caption {
+  background-color: rgb(31, 30, 87);
   width: 100%;
 }
+.thumbnails {
+  flex-direction: row;
+}
 
-#portfolio .cursor {
+.thumbnails > img {
+  width: 20%;
+  opacity: 0.5;
   cursor: pointer;
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: rgb(31, 30, 87);
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 0 3px;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(208, 62, 159, 0.8);
-}
-
-.caption-container {
-  text-align: center;
-  background-color: rgb(31, 30, 87);
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
+.thumbnails > img:hover {
   opacity: 1;
 }
+
+
+
 
 
 /*********************************
 * 			       Team				       *
 **********************************/
 
-
-
 #team h1 {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #team .content {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
   padding: 0 10vw 0 10vw;
 }
 
@@ -301,35 +217,35 @@ nav > a.active {
   width: 65vw;
 }
 #team .person {
-	padding: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #team .person > div {
-	text-align: left;
+  text-align: left;
 }
 
 #team h3 {
-	margin: 0;
-	font-family: Poppins, sans-serif;
-	text-transform: uppercase;
-	font-size: 2rem;
-	font-weight: 200;
-	letter-spacing: 2px;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 #team h4 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #team .person > img {
-	padding-left: 0 20px 0 20px;
-	width: 180px;
-	border-radius: 50%;
-	align-self: flex-start;
+  padding-left: 0 20px 0 20px;
+  width: 180px;
+  border-radius: 50%;
+  align-self: flex-start;
 }
 
 #team p {
