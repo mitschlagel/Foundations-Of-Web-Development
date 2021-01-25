@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;900&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
+
+/********************************
+*          Global               *
+********************************/
 
 html,
 body {
@@ -24,6 +28,32 @@ a:active {
 #current {
   color: rgb(46, 102, 176);
 }
+
+.main-content {
+  margin-bottom: 5vh;
+  margin-left: 20vw;
+  width: 60vw;
+  height: 100%;
+  font-size: 14px;
+
+}
+
+.main-content h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  width: 60vw;
+}
+
+/********************************
+*          Landing Page         *
+********************************/
 
 header {
   padding: 2vh 5vw 0 5vw;
@@ -72,6 +102,7 @@ nav {
 
 #last-name {
   color: #fff;
+  
 }
 
 .landing-image {
@@ -82,14 +113,31 @@ nav {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 75vh;
+  margin-bottom: 250px;
+  
 }
 
-.main-content {
-  margin-bottom: 5vh;
-  margin-left: 20vw;
-  width: 80vw;
-  height: 100%;
+.no-content > a {
+  margin: 0;
+  font-size: 6rem;
+  position: absolute;
+  bottom: 5px;
+  left: 50vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  transform: rotate(90deg);
+  animation: blinker 2s linear infinite;
 }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/********************************
+*          Side Nav             *
+********************************/
 
 .small-nav {
   display: flex;
@@ -118,11 +166,48 @@ nav {
   font-weight: 900;
 }
 
+.social-icons {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.social-icons > a {
+  margin: 0;
+  padding: 0;
+}
+
+img.icons {
+  margin: 1rem 0;
+  padding: 0;
+  width: 1.8rem;
+}
+
+#github:hover {
+  content: url(../img/icons/github-blue.png);
+}
+
+#linkedin:hover {
+  content: url(../img/icons/linkedin-blue.png);
+}
+
+#lastfm:hover {
+  content: url(../img/icons/lastfm-blue.png);
+}
+
+/********************************
+*          Resume               *
+********************************/
+
 .bio {
   display: flex;
   flex-direction: row;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
+.skills {
+  margin-top: 0;
+}
 .skill-green {
   background-color: rgba(144, 238, 144, 0.5);
   padding: 0.2rem 0.4rem;
@@ -142,46 +227,15 @@ nav {
 }
 
 img.rounded {
-  height: 160px;
-  width: 160px;
-  margin: 25px 0 0 100px;
+  height: 200px;
+  width: 200px;
+  margin: 25px 0 0 15vw;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0;
-  display: inline-block;
+  position: relative;
 }
 
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-img.icons {
-  margin-top: 1rem;
-  padding: 0;
-  width: 1.6rem;
-}
-
-img.icons:hover {
-  box-shadow: 0 0 25px rgb(46, 102, 176);
-}
-
-.main-content h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.bio > p {
-  font-size: 1rem;
-}
-
-.bio > h2 {
-  margin: 0;
-  padding: 0;
-}
 
 /********************************
 *          Portfolio            *
@@ -191,18 +245,22 @@ img.icons:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
+
+  box-sizing: border-box;
 }
 
 .gallery a {
   margin: 0;
   padding: 0;
+  
 }
 
 .current-slide {
   background-image: url(../img/portfolio/blanka.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60vw;
+  width: 60vw; /* Width must be set so that div displays on initial load */
   height: 40vh;
 
 }
@@ -220,19 +278,46 @@ img.icons:hover {
   flex-direction: column;
 }
 
+.thumnails > * {
+  flex-direction: row;
+}
+
 .thumbnails img {
-  width: 15vw;
-  opacity: 0.75;
+  width: 14.5vw;
+  opacity: 0.5;
   cursor: pointer;
+ 
 }
 
 #portfolio  img:hover {
   opacity: 1;
 }
 
-hr {
-  width: 60vw;
+/********************************
+*          Music                *
+********************************/
+
+#music {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.music-header {
+  text-align: justify;
+  padding-right: 3vw;
+}
+
+.spotify {
+  flex-direction: column;
+}
+
+.spotify iframe {
+  border: 1px solid #000;
+}
+
+
+
 
 footer {
   height: 1000px;
