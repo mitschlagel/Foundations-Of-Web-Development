@@ -1,61 +1,54 @@
 #mobile-menu {
-    display: block;
-    position: fixed;
-    right: 2vw;
-    top: 0;
-    font-size: 4rem;
-    color: white;
-    z-index: 2;
+  display: block;
+  position: fixed;
+  right: 2vw;
+  top: 0;
+  font-size: 4rem;
+  color: white;
+  z-index: 2;
 }
-
 
 nav {
-    display: none;
-    right: 2vw;
-    top: 4rem;
-    font-size: 3em;
-    align-items: center;
+  display: none;
+  right: 2vw;
+  top: 4rem;
+  font-size: 3em;
+  align-items: center;
 }
-
 
 #mobile-trigger:checked ~ nav {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
 }
-
 
 nav > a {
-    border: 0;
-    padding: .5em;
+  border: 0;
+  padding: 0.5em;
 }
-
 
 nav > div {
-    margin-top: 1em;
+  margin-top: 1em;
 }
-
 
 header {
-    margin-top: 0;
+  margin-top: 0;
 }
-
 
 #intro {
-    flex-direction: column;
-    min-height: 50vh;
-    box-sizing: border-box;
+  flex-direction: column;
+  min-height: 50vh;
+  box-sizing: border-box;
 }
 
-
-.side1, .side2 {
-    min-width: 80vw;
-    max-width: 80vw;
+.side1,
+.side2 {
+  min-width: 80vw;
+  max-width: 80vw;
 }
 
 .box {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0;
 }
-
