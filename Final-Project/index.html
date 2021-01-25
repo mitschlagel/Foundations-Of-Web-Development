@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spencer Jones</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/slideshow.js"></script>
   </head>
   <body>
     <header id="home">
@@ -24,27 +26,35 @@
       </div>
     </header>
     <main>
+
+      <!-- Last name is pasrt of main section, but placed below header -->
       <section class="landing-image">
         <div id="last-name" class="name">jones</div>
-        <div class="no-content"></div>
-        <nav class="small-nav">
-          <a href="#home">home</a>
-          <a href="#resume">resume</a>
-          <a href="#portfolio">portfolio</a>
-          <a href="#music">music</a>
-          <a href="#contact">contact</a>
-          <div class="social-icons">
-              <a href="http://www.linkedin.com">
-                <img src="img/icons/linkedin.png" class="icons" />
-              </a>
-              <a href="http://www.github.com">
-                <img src="img/icons/github.png" class="icons" />
-              </a>
-          </div>
-        </nav>
+        <div class="no-content">
+          <!-- Empty space for landing-image -->
+        </div>
       </section>
+
+      <!-- Secondary nav for scrolling through each section -->
+       
+      <nav class="small-nav">
+        <a href="#home">home</a>
+        <a href="#resume">resume</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#music">music</a>
+        <a href="#contact">contact</a>
+        <div class="social-icons">
+          <a href="http://www.linkedin.com">
+            <img src="img/icons/linkedin.png" class="icons" />
+          </a>
+          <a href="http://www.github.com">
+            <img src="img/icons/github.png" class="icons" />
+          </a>
+        </div>
+      </nav>
       
-      <!-- Start Portfolio-->
+      
+      <!-- Start Resume-->
 
       <section class="main-content" id="resume">
           <article class="bio">
@@ -108,16 +118,35 @@
       <!-- Start Portfolio-->
 
       <section class="main-content" id="portfolio">
-        <article class="resume-header">
-          <div id="bio-header">
-            <h1>Portfolio</h1>
-            <p>
-              Some web sites I've built
-            </p>
-            <p>
-              Some apps I've built
-            </p>
-        </article>
+        <article class="portforlio-summary">
+          <h1>Portfolio</h1>
+          <p>
+            Below is a selection of work from my time at AIM Code School.
+          </p>
+        <article class="gallery">
+          <!-- <p>
+            Some web sites I've built
+          </p> -->
+            <div class="current-slide">
+              <!-- Display current slide -->
+              <!-- href changes to link to project -->
+            </div>
+          <div class="caption">
+            Blanka Web Development: HTML5, CSS3
+          </div>
+          <div class="thumbnails">
+            <div class="row1">
+              <img src="img/portfolio/blanka.png" alt="Blanka Web Development: HTML5, CSS3" id="blanka">
+              <img src="img/portfolio/chipotle.png" alt="Remake of Chipotle Homepage: HTML5, CSS3, JavaScript, jQuery" id="chipotle">
+              <img src="img/portfolio/dsc.png" alt="Developer Style Conference: HTML5, CSS3" id="dsc">
+              <img src="img/portfolio/wombat.png" alt="Wombat Coffee: HTML5, CSS3, JavaScript, jQuery" id="wombat">
+            </div>
+            <div class="row2">
+              <img src="img/portfolio/todo.png" alt="ToDo List: HTML5, CSS3, JavaScript, jQuery" id="todo">
+              <img src="img/portfolio/calc.png" alt="JavaScript Calculator: HTML5, CSS3, JavaScript, jQuery" id="calc">
+            </div>
+          </div>
+        </article>          
       </section>
 
       <!-- End Portfolio -->
@@ -127,8 +156,7 @@
       <!-- Start Music -->
 
       <section class="main-content" id="music">
-        <article class="resume-header">
-          <div id="bio-header">
+        <article class="music-header">
             <h1>Music</h1>
             <p>
               Some stuff playing music.
@@ -149,12 +177,12 @@
       <!-- Start Contact -->
 
       <section class="main-content" id="contact">
-        <article class="resume-header">
-          <div id="bio-header">
+        <article class="form-header">
             <h1>Contact</h1>
             <p>
-              There will be a form here.
-              </p>
+              Please reach out with any questions/comments/adulations.
+            </p>
+            <form action=""></form>
 
         </article>
       </section>
