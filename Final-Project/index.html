@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spencer Jones</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (hover: none) and (orientation: portrait)"/>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/slideshow.js"></script>
   </head>
   <body>
-    <header id="home">
+    
+    <!-- Header for larger screens -->
+    <header class="desktop-header" id="home">
       <div class="header-top">
-        <div class="title">technologist and musician</div>
+        <div class="title">web developer and musician</div>
       </div>
       <div class="header-bottom">
         <nav class="header-nav">
           <a href="#resume">resume</a>
           <a href="#portfolio">portfolio</a>
+          <a href="#">blog</a>
           <a href="#music">music</a>
           <a href="#contact">contact</a>
         </nav>
         <div id="first-name" class="name">spencer</div>
       </div>
     </header>
-    <main>
 
+    <main>
+      <!-- This section also only for larger screens -->
       <!-- Last name is pasrt of main section, but placed below header -->
       <section class="landing-image">
         <div id="last-name" class="name">jones</div>
@@ -36,12 +41,31 @@
         </div>
       </section>
 
-      <!-- Secondary nav for scrolling through each section -->
-       
+      
+      <!-- Primary banner and nav for mobile devices -->
+      <div class="mobile-banner">
+        <nav class="mobile-nav">
+          &#9776;
+          <!-- <a href="#home">home</a>
+          <a href="#resume">resume</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#">blog</a>
+          <a href="#music">music</a>
+          <a href="#contact">contact</a> -->
+        </nav>
+        <div class="title">
+          <h1>Spencer Jones</h1>
+          <p>web developer and musician</p>
+        </div>
+        
+      </div>
+
+      <!-- Secondary nav for scrolling through each section on large screens-->
       <nav class="small-nav">
         <a href="#home">home</a>
         <a href="#resume">resume</a>
         <a href="#portfolio">portfolio</a>
+        <a href="#">blog</a>
         <a href="#music">music</a>
         <a href="#contact">contact</a>
         <div class="social-icons">
@@ -62,46 +86,38 @@
 
       <section class="main-content" id="resume">
           <article class="bio">
-            <div>
-            <h1>Spencer L. Jones</h1>
-            <em>Front-End Web Developer with Full-Stack Aspirations</em>
-            <p>
-              Graduate of AIM Code School<br />
-              Computer science student at Creighton Univeristy<br />
-              Classical percussionist and jazz drummer
-            </p>
-            <h1>Techincal Studies and Certifications</h1>
-            <p>
-              AIM Code School Foundations of Web Development<br />
-              CS50 Introduction to Computer Science<br />
-            </p>
-          </div>
             <img
               src="img/headshot.jpg"
               alt="spencer's profile photo"
               class="rounded"
             />
+            <div class="bio-text">
+            <h1>Spencer L. Jones</h1>
+            <em>Front-End Web Developer with Full-Stack Aspirations</em>
+            <p>
+              &#128104;&#8205;&#128187; Computer science student at Creighton Univeristy<br>
+              &#129345; Classical musician and jazz drummer
+            </p>
+            
+          </div>
+            
           </article>
           <article class="skills">
             <h1>Languages and Frameworks</h1>
-            <p>
-            Most Experience: 
+            <p>More Comfortable</p>
             <span class="skill-green">HTML5</span>
-            <span class="skill-green">CSS3</span><br />
-            </p>
-            <p>
-            Some Exeprience: 
+            <span class="skill-green">CSS3</span>
+            <br>
+            <p>Less Comfortable</p>
             <span class="skill-yellow">Python</span>
             <span class="skill-yellow">JavaScript</span>
             <span class="skill-yellow">jQuery</span>
             <span class="skill-yellow">SQL (SQLite3)</span>
-            </p>
-            <p>
-            Academic Study:
-            <span class="skill-blue">Python</span>
-            <span class="skill-blue">Java</span>
-            <span class="skill-blue">C</span>
-            </p>
+            <br>
+            <p>Familiar</p>
+            <span class="skill-red">Java</span>
+            <span class="skill-red">C</span>
+            
           </article>
           <article class="education">
             <h1>Relevant Coursework</h1>
@@ -110,6 +126,12 @@
             CSC 222 Object-Oriented Programming<br />
             CSC 414 Computer Organization and Embedded Systems
             </p>
+            <h1>Techincal Studies and Certifications</h1>
+            <ul>
+              <li>AIM Code School Foundations of Web Development</li>
+              <li>CS50 Introduction to Computer Science</li>
+            </ul>
+
             <h1>Formal Education</h1>
             <p>
             Cerfiticate in Computer Science, Creighton University, 2020-2022<br />

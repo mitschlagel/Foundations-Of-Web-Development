@@ -11,8 +11,8 @@ body {
 }
 
 a {
+  font-size: 1.5rem;
   color: #000;
-  font-size: 1.6rem;
   text-decoration: none;
   padding-left: 1.5ch;
 }
@@ -34,7 +34,7 @@ a:active {
   margin-left: 20vw;
   width: 60vw;
   height: 100%;
-  font-size: 14px;
+  font-size: 15px;
 
 }
 
@@ -55,7 +55,7 @@ hr {
 *          Landing Page         *
 ********************************/
 
-header {
+.desktop-header {
   padding: 2vh 5vw 0 5vw;
   background-color: #fff;
   height: 25vh;
@@ -64,6 +64,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.mobile-banner {
+  display: none;
 }
 
 .header-top {
@@ -82,7 +86,7 @@ header {
   align-items: flex-end;
 }
 
-nav {
+.header-nav {
   text-decoration: none;
   padding-right: 5vw;
   padding-bottom: 1.4vw;
@@ -122,7 +126,7 @@ nav {
   font-size: 6rem;
   position: absolute;
   bottom: 5px;
-  left: 50vw;
+  left: 45vw;
   color: white;
   font-family: "Open Sans", sans-serif;
   transform: rotate(90deg);
@@ -150,6 +154,8 @@ nav {
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
+
+
 
 .small-nav.is-visible {
   position: fixed;
@@ -200,14 +206,21 @@ img.icons {
 
 .bio {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.bio a {
+  font-size: 15px;
+  padding: 0;
 }
 
 .skills {
   margin-top: 0;
 }
+
 .skill-green {
   background-color: rgba(144, 238, 144, 0.5);
   padding: 0.2rem 0.4rem;
@@ -220,8 +233,8 @@ img.icons {
   border-radius: 8px;
 }
 
-.skill-blue {
-  background-color: rgba(173, 216, 230, 0.5);
+.skill-red {
+  background-color: rgba(236, 105, 105, 0.5);
   padding: 0.2rem 0.4rem;
   border-radius: 8px;
 }
@@ -229,11 +242,9 @@ img.icons {
 img.rounded {
   height: 200px;
   width: 200px;
-  margin: 25px 0 0 15vw;
+  margin: 2rem 0 0 5rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0;
-  position: relative;
 }
 
 

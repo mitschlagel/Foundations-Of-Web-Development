@@ -1,0 +1,63 @@
+.desktop-header {
+    display: none;
+}
+
+.landing-image {
+    display: none;
+}
+
+.mobile-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mobile-banner h1 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-family: "Rubik Mono One", sans-serif;
+}
+
+.small-nav.is-visible {
+    display: none;
+}
+.mobile-nav {
+    font-size: 3rem;
+}
+
+.mobile-nav a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+img.icons {
+    width: 2ch;
+}
+
+.main-content {
+    margin-top: 16vh;
+}
+
+/********************************
+*          Resume               *
+********************************/
+
+.bio {
+    flex-direction: column;
+    align-items: center;
+}
+
+img.rounded {
+
+    margin: auto;
+    
+  }
