@@ -347,3 +347,12 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-size: smaller;
 }
+
+/********************************
+*          Contact                *
+********************************/
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
