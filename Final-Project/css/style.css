@@ -92,6 +92,26 @@ hr {
   padding-bottom: 1.4vw;
 }
 
+/* Media query to control responsive display */
+@media (max-width: 1000px) {
+  .header-top {
+    display: block;
+    position: absolute;
+    top: 2.8vh;
+    right: 5vh;
+  }
+  
+  .header-bottom .header-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #first-name {
+    align-self: flex-end;
+  }
+}
+
 .name {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 8rem;

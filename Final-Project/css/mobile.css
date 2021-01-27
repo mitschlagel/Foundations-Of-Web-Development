@@ -12,6 +12,10 @@
     background-position: right bottom;
 }
 
+.main-content {
+    margin-left: 10vw;
+    width: 80vw;
+}
 .mobile-banner {
     position: fixed;
     top: 0;
@@ -42,19 +46,34 @@
 .small-nav.is-visible {
     display: none;
 }
+
 .mobile-nav {
     display: none;
     font-size: 1.5rem;
+    position: fixed;
+    top: 7vh;
+    left: 1.7vw;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+    padding: 6px;
 }
+
+.mobile-nav > a {
+    padding: 0.2rem 0;
+    
+}
+.mobile-nav a:hover {
+    color: rgb(46, 102, 176);
+}
+
+
 
 .mobile-nav.open {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    top: 7vh;
-    left: 0;
-    background-color: #fff;
+    align-items: center;
+    
 }
 
 .mobile-nav a {
