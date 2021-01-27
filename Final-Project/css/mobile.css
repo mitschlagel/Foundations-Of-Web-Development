@@ -2,49 +2,129 @@
     display: none;
 }
 
-.landing-image {
+.landing-image .name {
     display: none;
 }
 
+.landing-image {
+    margin: 0;
+    height: 100vh;
+    background-position: right bottom;
+}
+
 .mobile-banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
-    background-color: black;
-    color: white;
     position: fixed;
     top: 0;
     left: 0;
+    display: inline;
+    text-align: right;
+    padding: 1vh 0;
+    background-color: #fff;
     width: 100%;
+    height: 5vh;
 }
 
 .mobile-banner h1 {
+    color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 0.25vh;
     margin-bottom: 0;
-    font-size: 1.2rem;
-    font-family: "Rubik Mono One", sans-serif;
 }
 
+
+.title {
+    margin-right: 10vw;
+}
+
+/* Remove secondary nav from desktop page */
 .small-nav.is-visible {
     display: none;
 }
 .mobile-nav {
-    font-size: 3rem;
+    display: none;
+    font-size: 1.5rem;
+}
+
+.mobile-nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    background-color: #fff;
 }
 
 .mobile-nav a {
-    color: white;
+    color: black;
     font-size: 1.1rem;
 }
+
+/* Selectors to animate the hamburger button */
+
+.hamburger-button {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+.single-stripe {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.single-stripe span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background:#000;
+    border-radius: 10px;
+    display: block;
+    opacity: 1;
+    left: 5vw;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.single-stripe span:nth-child(1) {
+    top: 0;
+}
+
+.single-stripe span:nth-child(2) {
+    top: 10px;
+}
+.single-stripe span:nth-child(3) {
+    top: 20px;
+}
+
+.single-stripe.animate span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+}
+
+.single-stripe.animate span:nth-child(2) {
+    opacity: 0;
+    left: -2px;
+}
+
+.single-stripe.animate span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-135deg);
+}
+
 
 img.icons {
     width: 2ch;
 }
 
 .main-content {
-    margin-top: 16vh;
+    padding-top: 10vh;
 }
 
 /********************************

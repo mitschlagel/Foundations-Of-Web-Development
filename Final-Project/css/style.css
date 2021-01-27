@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /********************************
 *          Global               *
@@ -11,7 +12,7 @@ body {
 }
 
 a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #000;
   text-decoration: none;
   padding-left: 1.5ch;
@@ -60,7 +61,7 @@ hr {
   background-color: #fff;
   height: 25vh;
   font-family: "Playfair Display", serif;
-  font-weight: 900;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -76,14 +77,13 @@ hr {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 2rem;
-  color: rgba(72, 73, 75, 0.8);
 }
 
 .header-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 .header-nav {
@@ -93,8 +93,8 @@ hr {
 }
 
 .name {
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: 6rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -110,7 +110,7 @@ hr {
 }
 
 .landing-image {
-  padding: 0 5vw 0 0;
+  padding: 1vw 5vw 0 0;
   background-image: url("../img/background2.jpg");
   background-size: cover;
   background-position: top;
@@ -121,12 +121,16 @@ hr {
   
 }
 
+.no-content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
 .no-content > a {
   margin: 0;
   font-size: 6rem;
-  position: absolute;
-  bottom: 5px;
-  left: 45vw;
   color: white;
   font-family: "Open Sans", sans-serif;
   transform: rotate(90deg);
@@ -140,7 +144,7 @@ hr {
 }
 
 /********************************
-*          Side Nav             *
+*          Secondary Nav       *
 ********************************/
 
 .small-nav {
@@ -155,8 +159,6 @@ hr {
   will-change: opacity, visibility;
 }
 
-
-
 .small-nav.is-visible {
   position: fixed;
   left: 2vw;
@@ -169,7 +171,7 @@ hr {
 .small-nav > a {
   font-size: 1.5rem;
   font-family: "Playfair Display", serif;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .social-icons {
@@ -223,19 +225,19 @@ img.icons {
 
 .skill-green {
   background-color: rgba(144, 238, 144, 0.5);
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 8px;
 }
 
 .skill-yellow {
   background-color: rgba(255, 255, 0, 0.5);
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 8px;
 }
 
 .skill-red {
   background-color: rgba(236, 105, 105, 0.5);
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 8px;
 }
 
