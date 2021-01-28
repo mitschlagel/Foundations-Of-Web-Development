@@ -60,6 +60,7 @@
 .small-nav > a {
   padding: 0.2rem 0;
 }
+
 .small-nav a:hover {
   color: rgb(46, 102, 176);
 }

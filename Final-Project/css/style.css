@@ -36,14 +36,13 @@ a:active {
   margin-right: 0;
   padding-right: 0;
   width: 60vw;
-  height: 100%;
   font-size: 15px;
 }
 
 .main-content h1 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
