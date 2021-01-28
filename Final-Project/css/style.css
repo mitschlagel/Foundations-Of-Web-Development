@@ -33,6 +33,8 @@ a:active {
 .main-content {
   margin-bottom: 5vh;
   margin-left: 20vw;
+  margin-right: 0;
+  padding-right: 0;
   width: 60vw;
   height: 100%;
   font-size: 15px;
@@ -161,14 +163,16 @@ hr {
 }
 
 /********************************
-*          Secondary Nav       *
+* Sidebar Nav for Large Display *
 ********************************/
 
 .small-nav {
+  position: fixed;
+  left: 2vw;
+  top: 3.5vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: fixed;
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -177,9 +181,6 @@ hr {
 }
 
 .small-nav.is-visible {
-  position: fixed;
-  left: 2vw;
-  top: 3vh;
   opacity: 1;
   transform: none;
   visibility: visible;
@@ -189,34 +190,6 @@ hr {
   font-size: 1.5rem;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-}
-
-.social-icons {
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.social-icons > a {
-  margin: 0;
-  padding: 0;
-}
-
-img.icons {
-  margin: 1rem 0;
-  padding: 0;
-  width: 1.8rem;
-}
-
-#github:hover {
-  content: url(../img/icons/github-blue.png);
-}
-
-#linkedin:hover {
-  content: url(../img/icons/linkedin-blue.png);
-}
-
-#lastfm:hover {
-  content: url(../img/icons/lastfm-blue.png);
 }
 
 /********************************
@@ -236,25 +209,52 @@ img.icons {
   padding: 0;
 }
 
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+img.icons {
+  padding-right: 2ch;
+  width: 1.8rem;
+}
+
+#github:hover {
+  content: url(../img/icons/github-blue.png);
+}
+
+#linkedin:hover {
+  content: url(../img/icons/linkedin-blue.png);
+}
+
+#lastfm:hover {
+  content: url(../img/icons/lastfm-blue.png);
+}
+
+#twitter:hover {
+  content: url(../img/icons/twitter-blue.png);
+}
+
 .skills {
   margin-top: 0;
 }
 
 .skill-green {
   background-color: rgba(144, 238, 144, 0.5);
-  padding: 0.1rem 0.4rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 8px;
 }
 
 .skill-yellow {
   background-color: rgba(255, 255, 0, 0.5);
-  padding: 0.1rem 0.4rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 8px;
 }
 
-.skill-red {
-  background-color: rgba(236, 105, 105, 0.5);
-  padding: 0.1rem 0.4rem;
+.skill-blue {
+  background-color: rgba(71, 137, 222, 0.5);
+  padding: 0.2rem 0.4rem;
   border-radius: 8px;
 }
 
@@ -329,11 +329,13 @@ img.rounded {
 
 .music-header {
   text-align: justify;
-  padding-right: 3vw;
+  padding-right: 5vw;
 }
 
-.spotify {
+.media {
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .spotify iframe {
@@ -355,4 +357,10 @@ footer {
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 30vw;
+}
+
+.contact-form #submit {
+  width: 5vw;
+  margin-top: 2vh;
 }
