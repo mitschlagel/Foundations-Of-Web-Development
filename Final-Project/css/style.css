@@ -342,12 +342,24 @@ img.rounded {
   height: 280px;
 }
 
-footer {
-  height: 1000px;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-size: smaller;
+.youtube-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
 }
+
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /********************************
 *          Contact                *
@@ -362,4 +374,14 @@ footer {
 .contact-form #submit {
   width: 5vw;
   margin-top: 2vh;
+}
+
+
+
+
+footer {
+  height: 1000px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
 }
