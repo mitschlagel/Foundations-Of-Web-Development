@@ -362,7 +362,7 @@ img.rounded {
 
 
 /********************************
-*          Contact                *
+*          Contact              *
 ********************************/
 
 .contact-form {
@@ -378,10 +378,26 @@ img.rounded {
 
 
 
-
+/********************************
+*          Footer               *
+********************************/
 footer {
-  height: 1000px;
+  height: 10vh;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: smaller;
+  font-size: 1em;
+  background-color: #000;
+  margin-top: 250px;
+  color: white;
+  padding-top: 2vh;
+  text-align: center;
+}
+
+footer a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: white;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
