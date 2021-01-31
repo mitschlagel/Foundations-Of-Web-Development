@@ -11,7 +11,14 @@
   height: 100vh;
   background-position: right bottom;
   background-attachment: scroll;
-  background-size: 50%;
+  
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  .landing-image {
+    background-size: 50%;
+  }
 }
 
 .main-content {
