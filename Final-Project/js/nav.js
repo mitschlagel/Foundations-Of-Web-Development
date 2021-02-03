@@ -41,6 +41,12 @@ $(document).ready(function () {
         }, 1500);
     });
 
+    $("a[href='#blog']").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#blog").offset().top
+        }, 1500);
+    });
+
     $("a[href='#music']").click(function () {
         $('html, body').animate({
             scrollTop: $("#music").offset().top
