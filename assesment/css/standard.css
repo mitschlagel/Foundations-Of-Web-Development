@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+body {
+    padding: 0 2vw;
+    margin: 0;
+    background-image: url(../images/playful-kitten-6683.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Elements */
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.title > span {
+    color: orange;
+    text-shadow: 3px 3px 2px black;
+}
+
+.subtitle {
+    margin-top: 4vh;
+    font-size: 2rem;
+}
+
+.subtitle > img {
+    height: 2ch;
+    vertical-align: middle;
+}
+
+.subtitle > img:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* Nav Elements */
+
+nav {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+nav > a {
+    color: orange;
+    text-shadow: 2px 2px 1px black;
+    font-size: 2.3rem;
+    text-decoration: none;
+    padding-left: 2ch;
+    display: inline-block;
+}
+
+nav > a:hover {
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+
+#pawprint {
+    display: none;
+}
+
+.pawprint-home {
+    display: inline-block;
+    transform: translateX(120px);
+    transition: 0.5s;
+    position: relative;
+}
+
+/* Schedule */
+
+.schedule {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    display: none;
+    width: 50vw;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+.schedule > table td {
+    vertical-align: top;
+    padding: 5px;
+}
+
+.is-visible {
+    display: inline-block;
+}
+
+#close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+/* Contact */
+.contact {
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    display: none;
+    width: 50vw;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid orange;
+}
