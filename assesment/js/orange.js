@@ -1,8 +1,6 @@
-$(document).ready(function() {
-    
-    // Functions to move pawprint around <nav>
+$(document).ready(function () {
 
-    
+    // Functions to move pawprint around <nav>
     $(".nav-containers").mouseenter(function () {
         $(this).children().addClass("move-link");
         $('#pawprint').css("display", "inline-block");
@@ -11,29 +9,23 @@ $(document).ready(function() {
     $(".nav-containers").mouseleave(function () {
         $(this).children().removeClass("move-link");
     });
-        
-    
 
-    
-
-    
-    
 
     // Functions to display content on nav clicks.
-    $("a[href='#schedule']").click(function () {   
-        $('.schedule').addClass("sched-is-visible"); 
+    $("a[href='#schedule']").click(function () {
+        $('.schedule').addClass("sched-is-visible");
     });
 
-    $('#sched-close-button').click(function() {
+    $('#sched-close-button').click(function () {
         $(':parent').removeClass("sched-is-visible");
     });
-    
-    $("a[href='#contact']").click(function () {   
-        $('.contact').addClass("contact-is-visible"); 
+
+    $("a[href='#contact']").click(function () {
+        $('.contact').addClass("contact-is-visible");
     });
-    
+
     // Button to close sched and contact windows.
-    $('#contact-close-button').click(function() {
+    $('#contact-close-button').click(function () {
         $(':parent').removeClass("contact-is-visible");
     });
 
