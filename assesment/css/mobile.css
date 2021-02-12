@@ -14,10 +14,18 @@
     height: 1.5ch;
 }
 
-nav > a {
-    font-size: 1.4rem;
+nav {
+    bottom: 10vh;
+    right: 10vh;
 }
 
+nav > div > a {
+    font-size: 1.4rem;
+    padding-right: 0.5ch;
+    padding-left: 0;
+}
+
+/*  About */
 .about {
     background-image: url(../images/kitten-flying-v.jpg);
     background-position: center;
@@ -27,4 +35,17 @@ nav > a {
     top: 10%;
     left: 5%;
     font-size: 1rem;
+}
+
+/* Schedule */
+.schedule {
+    font-size: 1rem;
+    width: 70vw;
+    left: 10%;
+}
+
+.contact {
+    font-size: 1rem;
+    width: 40vw;
+    left: 20%;
 }

@@ -1,6 +1,21 @@
 $(document).ready(function() {
     
     // Functions to move pawprint around <nav>
+
+    
+    $(".nav-containers").mouseenter(function () {
+        $(this).children().addClass("move-link");
+        $('#pawprint').css("display", "inline-block");
+    });
+
+    $(".nav-containers").mouseleave(function () {
+        $(this).children().removeClass("move-link");
+    });
+        
+    
+
+    
+
     
     
 
@@ -21,6 +36,7 @@ $(document).ready(function() {
     $('#contact-close-button').click(function() {
         $(':parent').removeClass("contact-is-visible");
     });
+
 
     // Functions for scrolling between Home and About pages.
     $("a[href='#home']").click(function () {

@@ -1,171 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
 
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Header Elements */
 
 header {
-    position: fixed;
-    top: 10;
-    left: 10;
-    padding: 10px 0 0 20px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 0 0 20px;
 }
 
 .title {
-    font-size: 4rem;
-    font-weight: 700;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .title > span {
-    color: orange;
-    text-shadow: 3px 3px 2px black;
+  color: orange;
+  text-shadow: 3px 3px 2px black;
 }
 
 .subtitle {
-    margin-top: 4vh;
-    font-size: 2rem;
+  margin-top: 4vh;
+  font-size: 2rem;
 }
 
 .subtitle > img {
-    height: 2ch;
-    vertical-align: middle;
+  height: 2ch;
+  vertical-align: middle;
 }
 
 .subtitle > img:hover {
-    transform: rotateY(360deg);
-    transition: 1s;
-	transform-style: preserve-3d;
-	position: relative;
+  transform: rotateY(360deg);
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
 /* Nav Elements */
 
 nav {
-    position: fixed;
-    bottom: 5vh;
-    right: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
 }
 
-nav > a {
-    color: orange;
-    text-shadow: 2px 2px 1px black;
-    font-size: 2.3rem;
-    text-decoration: none;
-    padding-left: 2ch;
-    display: inline-block;
+nav > div > a {
+  color: orange;
+  text-shadow: 2px 2px 1px black;
+  font-size: 2.3rem;
+  text-decoration: none;
+  padding-left: 2ch;
+  display: inline-block;
 }
 
-nav > a:hover {
-    transform: translateY(-100%);
-    transition: 0.5s;
+.move-link {
+  transform: translateY(-100%);
 }
 
 #pawprint {
-    display: none;
-}
-
-.pawprint-home {
-    display: inline-block;
-    transform: translateX(120px);
-    transition: 0.5s;
-    position: relative;
+  display: none;
 }
 
 /* Home */
 
 .home {
-    background-image: url(../images/playful-kitten-6683.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    height: 100vh;
+  background-image: url(../images/playful-kitten-6683.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  height: 100vh;
 }
-
 
 /* About */
 .about {
-    background-image: url(../images/kitten-flying.jpg);
-    background-size: cover;
-    height: 100vh;
+  background-image: url(../images/kitten-flying.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 .about > div {
-    position: relative;
-    top: 27%;
-    left: 20%;
-    font-size: 2rem;
+  position: relative;
+  top: 27%;
+  left: 20%;
+  font-size: 2rem;
 }
 
 /* Schedule */
 
 .schedule {
-    position: fixed;
-    top: 30%;
-    left: 25%;
-    display: none;
-    width: 50vw;
-    padding: 10px;
-    font-size: 1.5rem;
-    color: orange;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    border: 2px solid orange;
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  display: none;
+  width: 50vw;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: orange;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  border: 2px solid orange;
 }
 
 .schedule > table td {
-    vertical-align: top;
-    padding: 5px;
+  vertical-align: top;
+  padding: 5px;
 }
 
 #sched-close-button {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    cursor: pointer;
-    width: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  width: 25px;
 }
 
 .sched-is-visible {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Contact */
-.contact {
-    position: fixed;
-    top: 40%;
+@keyframes fly-in {
+  from {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  to {
     left: 36%;
-    display: none;
-    width: 20vw;
-    padding: 10px;
-    font-size: 1.5rem;
-    color: orange;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    border: 2px solid orange;
-    padding: 40px;
+    transform: rotate(720deg);
+  }
+}
+
+.contact {
+  position: fixed;
+  top: 40%;
+  left: 36%;
+  display: none;
+  width: 20vw;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: orange;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  border: 2px solid orange;
+  padding: 40px;
+  animation: fly-in 1s;
 }
 
 .contact-is-visible {
-    display: flex;
+  display: flex;
+  justify-content: center;
+}
+
+/* toggle with jQuery to fly contact out when close is clicked */
+@keyframes fly-out {
+  from {
+    left: 36%;
+    transform: rotate(720deg);
+  }
+  to {
+    left: 0;
+    transform: rotate(0deg);
+  }
 }
 
 #contact-close-button {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
 
 .contact > img {
-    display: inline-block;
-    height: 2ch;
-    padding-left: 1ch;
+  display: inline-block;
+  height: 2ch;
+  padding-left: 1ch;
 }
-
-
