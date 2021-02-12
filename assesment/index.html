@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange is the New Cat</title>
     <link rel="stylesheet" href="css/standard.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (hover: none) and (orientation: portrait)"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/orange.js"></script>
+    
 </head>
 <body>
     <header>
@@ -21,6 +21,16 @@
     </header>
 
     <main>
+        <nav>
+            <img src="images/pawprint.png" alt="paw print" id="pawprint">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section class="home">
+            <!-- Empty except for background image -->
+        </section>
         <section class="schedule">
             <table>
                 <tbody>
@@ -42,21 +52,24 @@
 
                 </tbody>
             </table>
-            <img src="images/close.png" alt="close button" id="close-button">
+            <img src="images/close.png" alt="close button" id="sched-close-button">
         </section>
 
-        <section class="contact">
-            (402) 555-555
-            <img src="images/close.png" alt="close button" id="close-button">
+        <section class="contact popup">
+            <span>(402) 555-555</span>
+            <img src="images/facebook.png" alt="facebook icon">
+            <img src="images/twitter.png" alt="twitter icon">
+            <img src="images/close.png" alt="close button" id="contact-close-button">
         </section>
 
-        <nav>
-            <img src="images/pawprint.png" alt="paw print" id="pawprint">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <section class="about popup">
+            <div>
+                <p>Kitty is no ordinary kitten. He's a <br>super-hero, too!</p>
+            </div>
+        </section>
+
+        
     </main>
+    <script src="js/orange.js"></script>
 </body>
 </html>

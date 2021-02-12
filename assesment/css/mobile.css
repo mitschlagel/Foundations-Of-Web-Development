@@ -1,0 +1,30 @@
+.home {
+    background-image: url(../images/kitten-v.jpg); 
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.subtitle > img {
+    height: 1.5ch;
+}
+
+nav > a {
+    font-size: 1.4rem;
+}
+
+.about {
+    background-image: url(../images/kitten-flying-v.jpg);
+    background-position: center;
+}
+
+.about > div {
+    top: 10%;
+    left: 5%;
+    font-size: 1rem;
+}

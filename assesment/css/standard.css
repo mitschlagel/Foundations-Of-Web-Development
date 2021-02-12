@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
 body {
-    padding: 0 2vw;
     margin: 0;
-    background-image: url(../images/playful-kitten-6683.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Header Elements */
+
+header {
+    position: fixed;
+    top: 10;
+    left: 10;
+    padding: 10px 0 0 20px;
+}
 
 .title {
     font-size: 4rem;
@@ -72,6 +74,32 @@ nav > a:hover {
     position: relative;
 }
 
+/* Home */
+
+.home {
+    background-image: url(../images/playful-kitten-6683.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+/* About */
+.about {
+    background-image: url(../images/kitten-flying.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.about > div {
+    position: relative;
+    top: 27%;
+    left: 20%;
+    font-size: 2rem;
+}
+
 /* Schedule */
 
 .schedule {
@@ -93,28 +121,51 @@ nav > a:hover {
     padding: 5px;
 }
 
-.is-visible {
-    display: inline-block;
-}
-
-#close-button {
+#sched-close-button {
     position: absolute;
     top: -10px;
     right: -10px;
     cursor: pointer;
+    width: 25px;
+}
+
+.sched-is-visible {
+    display: inline-block;
 }
 
 /* Contact */
 .contact {
     position: fixed;
-    top: 50%;
-    left: 25%;
+    top: 40%;
+    left: 36%;
     display: none;
-    width: 50vw;
+    width: 20vw;
     padding: 10px;
     font-size: 1.5rem;
     color: orange;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     border: 2px solid orange;
+    padding: 40px;
 }
+
+.contact-is-visible {
+    display: flex;
+}
+
+#contact-close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.contact > img {
+    display: inline-block;
+    height: 2ch;
+    padding-left: 1ch;
+}
+
+
