@@ -1,12 +1,12 @@
 // Object for project urls
 const links = {
-    blanka: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/Class-12/index.html',
-    chipotle: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/Chipotle/index.html',
-    dsc: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/DSC_2020/index.html',
-    wombat: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/WombatCoffee/index.html',
-    interface: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/Interface-Online-Courses/index.html',
-    todo: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/todoList/index.html',
-    calc: '/Users/spencerjones/Desktop/code/aim/Foundations-Of-Web-Development/calculator/index.html'
+    blanka: '#',
+    chipotle: '#',
+    dsc: '#',
+    wombat: '#',
+    interface: '#',
+    todo: '#',
+    calc: '#'
 }
 
 $(document).ready(function() {

@@ -7,10 +7,11 @@
 }
 
 .landing-image {
-  margin: 0;
+  display: none;
+  /* margin: 0;
   height: 100vh;
   background-position: right bottom;
-  background-attachment: scroll;
+  background-attachment: scroll; */
   
 }
 /* CSS specific to iOS devices */ 
@@ -40,6 +41,7 @@
   background-color: #fff;
   width: 100vw;
   height: 5vh;
+  z-index: 1;
 }
 
 .mobile-banner h1 {
@@ -55,6 +57,7 @@
 }
 
 .small-nav {
+  width: auto;
   display: none;
   font-size: 1.5rem;
   transform: none;
@@ -62,13 +65,16 @@
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
   padding: 6px;
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   transition: none;
 }
 
 .small-nav > a {
   padding: 0.2rem 0;
+  border-bottom: 1px solid black;
 }
+
+
 
 .small-nav a:hover {
   color: rgb(46, 102, 176);
@@ -82,11 +88,15 @@
   opacity: 1;
   position: fixed;
   top: 5.5vh;
-  left: 2vw;
+  left: 2.2vw;
 }
 
 .small-nav a {
   font-size: 1.1rem;
+}
+
+.small-nav .definition {
+  display: none;
 }
 
 /* Selectors to animate the hamburger button */
@@ -193,8 +203,12 @@ img.rounded {
 }
 
 .media {
-  width: 80vw;
+  display: none;
 }
+
+/********************************
+*          Contact                *
+********************************/
 
 .contact-form {
   width: 80vw;

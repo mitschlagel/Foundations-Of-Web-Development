@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&family=Playfair+Display:wght@200;400;900&family=Rubik+Mono+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /********************************
@@ -140,18 +140,18 @@ hr {
 }
 
 .no-content {
-  height: 80vh;
+  /* height: 80vh; */
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .no-content > a {
   margin: 0;
-  font-size: 6rem;
+  font-size: 10rem;
   color: white;
   font-family: "Open Sans", sans-serif;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(50%);
   animation: blinker 2s linear infinite;
 }
 
@@ -166,12 +166,14 @@ hr {
 ********************************/
 
 .small-nav {
+  width: 10vw;
   position: fixed;
   left: 2vw;
   top: 3.5vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: left;
   opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
@@ -190,6 +192,16 @@ hr {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
+
+.small-nav > div {
+  font-size: 0.8rem;
+  padding-top: 30px;
+}
+
+.small-nav div > span {
+  font-weight: 700;
+}
+
 
 /********************************
 *          Resume               *
@@ -327,8 +339,25 @@ img.rounded {
 }
 
 .music-header {
-  text-align: justify;
   padding-right: 5vw;
+}
+
+.music-info {
+  text-align: justify;
+}
+
+.music-header a {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.music-link > a {
+  color:rgb(46, 102, 176);
+  font-weight: bold;
+}
+
+.music-link > a:hover {
+  text-decoration: underline;
 }
 
 .media {
@@ -337,9 +366,13 @@ img.rounded {
   justify-content: flex-start;
 }
 
+.media > p {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .spotify iframe {
   border: 1px solid #000;
-  height: 280px;
 }
 
 .youtube-container {
